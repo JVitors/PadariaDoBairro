@@ -1,12 +1,11 @@
-/* Add styles here */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.box {
-    display: inline-block;
-    width: 200px;
-    height: 100px;
-    margin: 10px;
-    background-color: #f2a;
+.listas {
+    display: flex;
+    justify-content: space-between; /* ou use 'center', 'flex-start', etc. */
+    gap: 30px; /* espaçamento entre as listas */
+    margin-top: 20px;
+  }
+  
+  .listas > div {
+    flex: 1; /* divide igualmente o espaço entre os dois blocos */
+    padding: 10px;
   }
