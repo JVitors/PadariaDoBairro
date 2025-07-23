@@ -8,35 +8,78 @@
     <title>Pedidos</title>
 </head>
 <body>
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        
-        <br>
+    <header>
+        <h1>Padaria do José</h1>
+        <img src="./assets/img/logo.png" alt="imagem com a logo do site">
+        <h5><a href="./pedidos.html">Pedidos</a></h5> <h5><a href="./contato.html">Contato</a></h5> <h5><a href="./feedback.html">Feedback</a></h5> <h5><a href="./cadastro.html">Cadastro</a></h5>
+    </header>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <br>
-        
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <label for="nomeCompleto">Nome Completo*</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
+                <br>
+                <label for="telefone" id="telefone">Telefone*</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\s\d{5}-\d{4}" maxlength="11" required>
+                <br>
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </fieldset>
 
-        <br>
+            <fieldset>
+                <legend>Detalhes do Pedido</legend>
+                <p><strong>Tipos de Produto</strong></p>
+                <input type="radio" name="bolo" id="bolo">
+                <label for="bolo">Bolo</label>
+                <br>
+                <input type="radio" name="pao" id="pao">
+                <label for="pao">Pão</label>
+                <br>
+                <input type="radio" name="salgado" id="salgado">
+                <label for="salgado">Salgado</label>
+                <br>
+                <input type="radio" name="bebida" id="bebida">
+                <label for="bebida">Bebida</label>
+                <br>
+                <p><strong>Sabor/Recheio</strong></p>
+                <select name="saborRecheio" id="saborRecheio" id="saborRecheio">
+                    <option value="selecionarSabor">Selecione um sabor</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="baunilha">Baunilha</option>
+                    <option value="morango">Morango/option>
+                    <option value="coxinhaFrango">Coxinha de Frango</option>
+                    <option value="cafe">Café</option>
+                </select>
 
-        <label for="mensagem">Pedido:</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Um pedidopor linha"></textarea>
+                <p>Tamanho</p>
+                <input type="radio" name="tamanho" id="tamanho">
+                <label for="tamanho">Pequeno</label>
+                <br>
+                <input type="radio" name="tamanho" id="tamanho">
+                <label for="tamanho">Médio</label>
+                <br>
+                <input type="radio" name="tamanho" id="tamanho">
+                <label for="tamanho">Grande</label>
+                <br>
+                <br>
+                <label for="dataEntrega">Data de Entrega</label>
+                <input type="date" name="dataEntrega" id="dataEntrega" required>
 
-        <br>
-
-        <label for="data-entrega">Data de Entrega</label>
-        <input type="datetime-local" name="datetime-local" id="datetime-local">
-        <input type="time" name="time" id="data-entrega">
-
-        <br>
-
-        <input type="submit" value="Enviar"></label>
-    </form>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <!-- Redes sociais-->
+        <div>
+          <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
+          <p>Nos visite no seguinte endereço:</p>
+          <address><p>Rua dos Bobos, Nº0</p></address>
+        </div>
+        <p>Todos os direitos reservados</p>
+      </footer>
     
 </body>
 </html>

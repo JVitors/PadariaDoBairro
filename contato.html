@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria do José</title>
+</head>
+<body>
+  <header>
+    <h1>Padaria do José</h1>
+    <img src="./assets/img/logo.png" alt="imagem com a logo do site">
+    <h5><a href="./pedidos.html">Pedidos</a></h5> <h5><a href="./contato.html">Contato</a></h5> <h5><a href="./feedback.html">Feedback</a></h5> <h5><a href="./cadastro.html">Cadastro</a></h5>
+  </header>
+
+  <main>
+    <h1>Entre em contato com a padaria</h1>
+
+    <form action="/formularioContato">
+      <fieldset>
+        <label for="nomeCompleto">Nome completo</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        <br>
+        <label for="assunto">Assunto</label>
+          <select name="assunto" id="assunto" id="assunto">
+            <option value="selecionarAssunto">Selecione um assunto</option>
+            <option value="reclamação">Reclamação</option>
+            <option value="sugestão">Sugestão</option>
+            <option value="elogio">Elogio</option>
+          </select>
+          <br>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required minlength="10"></textarea>
+          <br>
+          <label for="Telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\s\d{5}-\d{4}" maxlength="11">
+          <br>
+          <p>Avaliação</p>
+          <input type="radio" id="avalicao" name="avalicao" value="boa">
+          <label for="avalicao">Boa</label>
+          <br>
+          <input type="radio" id="avalicao" name="avalicao" value="regular">
+          <label for="avalicao">Regular</label>
+          <br>
+          <input type="radio" id="avalicao" name="avalicao" value="ruim">
+          <label for="avalicao">Ruim</label>
+          <br>
+          <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </main>
+  
+  <footer>
+    <!-- Redes sociais-->
+    <div>
+      <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
+      <p>Nos visite no seguinte endereço:</p>
+      <address><p>Rua dos Bobos, Nº0</p></address>
+    </div>
+    <p>Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
+
