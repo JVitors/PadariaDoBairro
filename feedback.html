@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <link rel="stylesheet" href="../assets/css/estilo.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria do José</title>
+  <link rel="stylesheet" href="../assets/css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria do José</title>
 </head>
+
 <body>
   <header>
     <h1>Padaria do José</h1>
     <img src="./assets/img/logo.png" alt="imagem com a logo do site">
-    <h5><a href="./pedidos.html">Pedidos</a></h5> <h5><a href="./contato.html">Contato</a></h5> <h5><a href="./feedback.html">Feedback</a></h5> <h5><a href="./cadastro.html">Cadastro</a></h5>
+    <h5><a href="./pedidos.html">Pedidos</a></h5>
+    <h5><a href="./contato.html">Contato</a></h5>
+    <h5><a href="./feedback.html">Feedback</a></h5>
+    <h5><a href="./cadastro.html">Cadastro</a></h5>
   </header>
 
   <main>
@@ -18,69 +23,66 @@
 
     <form action="/formularioFeedback">
       <fieldset>
-      <label for="nomeCompleto">Nome Completo:</label>
-      <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo">
-      <br>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" placeholder="E-mail">
-      <br>
-      <label for="produto">Produto:</label>
-      <select name="produto" id="produto">
-        <option value="produto">--Escolha um produto--</option>
-        <option value="paoFrances">Pão Francês</option>
-        <option value="paoIntegral">Pão Integral</option>
-        <option value="boloFuba">Bolo de Fubá</option>
-        <option value="coxinhaFrango">Coxinha de Frango</option>
-        <option value="cafe">Café</option>
-      </select>
-      <br>
-      <p>Avaliação</p>
-      <input type="radio" name="excelente" id="excelente">
-      <label for="excelente">Excelente</label>
-      <br>
-      <input type="radio" name="bom" id="bom">
-      <label for="bom">Bom</label>
-      <br>
-      <input type="radio" name="regular" id="regular">
-      <label for="regular">Regular</label>
-      <br>
-      <input type="radio" name="ruim" id="ruim">
-      <label for="ruim">Ruim</label>
-      
-      <br>
-      <br>
-      </select>
-      <label for="comentario">Comentário</label>
-      <textarea id="comentario" name="comentario" placeholder="Comentário"></textarea>
-      <br>
-      <label for="interesse">Recomendaria para amigos:</label>
+        <legend>Preencha o formulário</legend>
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo">
         <br>
-        <input type="checkbox" name="interesse" value="recomendaria"> Recomendaria
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="E-mail">
         <br>
-        <input type="checkbox" name="interesse" value="naoRecomendaria"> Não Recomendaria
-      <br>
-      <p>Autoriza a publicação do depoimento</p>
-      <input type="checkbox" id="autorizacao" name="autorizacao">
-      <label for="autorizacao">Sim</label>
-      <input type="checkbox" id="naoAutorizacao" name="naoAutorizacao">
-      <label for="Não">Não</label>
-      <br>
-      <input type="submit" value="Enviar">
+        <label for="produto">Produto:</label>
+        <select name="produto" id="produto">
+          <option value="produto">--Escolha um produto--</option>
+          <option value="paoFrances">Pão Francês</option>
+          <option value="paoIntegral">Pão Integral</option>
+          <option value="boloFuba">Bolo de Fubá</option>
+          <option value="coxinhaFrango">Coxinha de Frango</option>
+          <option value="cafe">Café</option>
+        </select>
+        <br>
+        <p>Avaliação</p>
+        <input type="radio" name="excelente" id="excelente">
+        <label for="excelente">Excelente</label>
+        <br>
+        <input type="radio" name="bom" id="bom">
+        <label for="bom">Bom</label>
+        <br>
+        <input type="radio" name="regular" id="regular">
+        <label for="regular">Regular</label>
+        <br>
+        <input type="radio" name="ruim" id="ruim">
+        <label for="ruim">Ruim</label>
+        <br>
+        <br>
+        <label for="comentario">Comentário</label>
+        <textarea id="comentario" name="comentario" placeholder="Comentário"></textarea>
+        <br>
+        <label for="recomendaria">Recomendaria para amigos:</label>
+        <br>
+        <input type="checkbox" id="recomendaria" name="recomendaria" value="sim"> Sim
+        <br>
+        <p>Autoriza a publicação do depoimento</p>
+        <input type="checkbox" id="autorizacao" name="autorizacao" value="sim">
+        <label for="autorizacao">Sim</label>
+        <br>
+        <input type="submit" value="Enviar">
 
-    </fieldset>
+      </fieldset>
     </form>
   </main>
-  
+
   <footer>
     <!-- Redes sociais-->
     <div>
       <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
       <p>Nos visite no seguinte endereço:</p>
-      <address><p>Rua dos Bobos, Nº0</p></address>
+      <address>
+        <p>Rua dos Bobos, Nº0</p>
+      </address>
     </div>
     <p>Todos os direitos reservados</p>
   </footer>
 
 </body>
-</html>
 
+</html>

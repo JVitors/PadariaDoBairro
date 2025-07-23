@@ -1,114 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <link rel="stylesheet" href="./assets/css/estilo.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria do José</title>
+  <link rel="stylesheet" href="./assets/css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria do José</title>
 </head>
+
 <body>
   <header>
-    <h1>Padaria do José</h1> 
+    <h1>Padaria do José</h1>
     <img src="./assets/img/logo.png" alt="imagem com a logo do site">
-    <h5><a href="./pedidos.html">Pedidos</a></h5> <h5><a href="./contato.html">Contato</a></h5> <h5><a href="./feedback.html">Feedback</a></h5> <h5><a href="./cadastro.html">Cadastro</a></h5>
+    <h5><a href="./pedidos.html">Pedidos</a></h5>
+    <h5><a href="./contato.html">Contato</a></h5>
+    <h5><a href="./feedback.html">Feedback</a></h5>
+    <h5><a href="./cadastro.html">Cadastro</a></h5>
 
 
     <audio controls loop>
       <source src="./assets/audio/lofiSong.mp3" type="audio/mp3">
-      Seu navegador não suporta a tag de audio</audio>
+      Seu navegador não suporta a tag de audio
+    </audio>
   </header>
 
   <nav>
-      <ul>
-        <li><a href="#sobrenos">Sobre nós</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#diferencial">Diferencial</a></li>
-        <li><a href="#horario">Horário</a></li>
-      </ul>
+    <ul>
+      <li><a href="#sobrenos">Sobre nós</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#diferencial">Diferencial</a></li>
+      <li><a href="#horario">Horário</a></li>
+    </ul>
   </nav>
   <main>
     <div>
       <h1>Padaria do José!</h1>
       <p>Pães quentinhos todas as manhãs, venha já comprar o seu! Também temos bolos, salgados e muito mais!</p>
     </div>
-    
-      <!-- Nossos produtos-->
+    <!-- Nossos produtos-->
 
-      <div>
-        <section id="cardapio">
-          <h2>Conheça nosso cardapio</h2>
-          <video controls width="300" autoplay loop>
-            <source src="./assets/vid/padaria.mp4" type="video/mp4">
-            Seu navegador não suporta a tag de video.
-          </video>
-        </section>
-      </div>    
-      <div> <!--tabela-->
-        <table>
+    <div>
+      <section id="cardapio">
+        <h2>Conheça nosso cardapio</h2>
+        <video controls width="300" loop>
+          <source src="./assets/vid/padaria.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de video.
+        </video>
+      </section>
+    </div>
+    <div> <!--tabela-->
+      <table>
 
-          <!--titulo das colunas-->
-          <thead> 
-            <tr>
-              <th>Categoria</th>
-              <th>Produto</th>
-              <th>Descrição</th>
-              <th>Preço</th>
-              <th>Imagem</th>
-            </tr>
-          </thead>
+        <!--titulo das colunas-->
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Imagem</th>
+          </tr>
+        </thead>
 
-          <!--conteudo da tabela-->
-          <tbody>
-            <tr>
-              <td>Pães</td>
-              <td>Pão Francês</td>
-              <td>Tradicional</td>
-              <td>R$ 0,80</td>
-              <td><img src="./assets/img/cardapio/paoFrances.jpg" alt="Imagem de um pão frances" width="150" height="150"></td>
-            </tr>
-            <tr>
-              <td>Pães</td>
-              <td>Pão Integral</td>
-              <td>Feito com farinha integral</td>
-              <td>R$ 2,50</td>
-              <td><img src="./assets/img/cardapio/paoIntegral.jpg" alt="Imagem de pão integral fatiado" width="150" height="150"></td>
-            </tr>
-            <tr>
-              <td>Bolos</td>
-              <td>Bolo de Fubá</td>
-              <td>Com erva-doce</td>
-              <td>R$ 10,00</td>
-              <td><img src="./assets/img/cardapio/boloFuba.jpg" alt="Imagem de um bolo de fuba" width="150" height="150"></td>
-            </tr>
-            <tr>
-              <td>Salgados</td>
-              <td>Coxinha</td>
-              <td>Frango</td>
-              <td>R$ 6,00</td>
-              <td><img src="./assets/img/cardapio/coxinhaFrango.jpg" alt="Imagem de coxinhas" width="150" height="150"></td>
-            </tr>
-            <tr>
-              <td>Bebidas</td>
-              <td>Café</td>
-              <td>Café preto coado na hora</td>
-              <td>R$ 3,00</td>
-              <td><img src="./assets/img/cardapio/cafe.jpg" alt="Imagem de um café" width="150" height="150"></td>
-            </tr>
-          </tbody>
-        </table>
-        <h6>*imagens meramente ilustrativas</h6>
-      </div>
+        <!--conteudo da tabela-->
+        <tbody>
+          <tr>
+            <td>Pães</td>
+            <td>Pão Francês</td>
+            <td>Tradicional</td>
+            <td>R$ 0,80</td>
+            <td><img src="./assets/img/cardapio/paoFrances.jpg" alt="Imagem de um pão frances" width="150" height="150">
+            </td>
+          </tr>
+          <tr>
+            <td>Pães</td>
+            <td>Pão Integral</td>
+            <td>Feito com farinha integral</td>
+            <td>R$ 2,50</td>
+            <td><img src="./assets/img/cardapio/paoIntegral.jpg" alt="Imagem de pão integral fatiado" width="150"
+                height="150"></td>
+          </tr>
+          <tr>
+            <td>Bolos</td>
+            <td>Bolo de Fubá</td>
+            <td>Com erva-doce</td>
+            <td>R$ 10,00</td>
+            <td><img src="./assets/img/cardapio/boloFuba.jpg" alt="Imagem de um bolo de fuba" width="150" height="150">
+            </td>
+          </tr>
+          <tr>
+            <td>Salgados</td>
+            <td>Coxinha</td>
+            <td>Frango</td>
+            <td>R$ 6,00</td>
+            <td><img src="./assets/img/cardapio/coxinhaFrango.jpg" alt="Imagem de coxinhas" width="150" height="150">
+            </td>
+          </tr>
+          <tr>
+            <td>Bebidas</td>
+            <td>Café</td>
+            <td>Café preto coado na hora</td>
+            <td>R$ 3,00</td>
+            <td><img src="./assets/img/cardapio/cafe.jpg" alt="Imagem de um café" width="150" height="150"></td>
+          </tr>
+        </tbody>
+      </table>
+      <h6>*imagens meramente ilustrativas</h6>
+    </div>
 
-      
-      
-      <div>
-        <p><a href="./pedidos.html">Clique aqui para fazer um pedido online</a></p>
-        <p>Temos delivery pelo whatsapp: (0xx)9xxxx-xxxx</p>
-      </div>
 
-      <!--Horario de funcionamento-->
-      <div>
-        <section id="horario">
+    <div>
+      <p><a href="./pedidos.html">Clique aqui para fazer um pedido online</a></p>
+      <p>Temos delivery pelo whatsapp: (0xx)9xxxx-xxxx</p>
+    </div>
+
+    <!--Horario de funcionamento-->
+    <div>
+      <section id="horario">
         <h2>Horario de Funcionamento</h2>
         <table>
           <thead>
@@ -145,36 +153,45 @@
           </tbody>
 
         </table>
-        </section>
-      </div>
-      
-      <!--Sobre nós-->
-      <div>
-        <section id="sobrenos">
-        <h2>Sobre nós</h2>
-        <p>Padaria do José Fundada com amor e dedicação, a Padaria do José é aquele cantinho especial onde o pão sempre sai quentinho e o atendimento tem gosto de amizade. Somos apaixonados por transformar ingredientes simples em momentos deliciosos, com receitas que respeitam a tradição e um ambiente que acolhe cada cliente como parte da família. Aqui, o aroma do café fresco e o sabor do pão caseiro fazem parte da nossa história e da sua também.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/BVY_yumzGYI" frameborder="0" allowfullscreen></iframe>
       </section>
     </div>
 
-        <!--Diferencial-->
-      <div>
-        <section id="diferencial">
-        <h2>O nosso diferencial</h2>
-        <p>Nosso Diferencial Na Padaria do José, cada receita é feita com alma. Mais do que vender pão, cultivamos memórias com sabor, acolhimento e ingredientes de verdade. Aqui, tradição e carinho são o segredo de cada fornada.</p>
+    <!--Sobre nós-->
+    <div>
+      <section id="sobrenos">
+        <h2>Sobre nós</h2>
+        <p>Padaria do José Fundada com amor e dedicação, a Padaria do José é aquele cantinho especial onde o pão sempre
+          sai quentinho e o atendimento tem gosto de amizade. Somos apaixonados por transformar ingredientes simples em
+          momentos deliciosos, com receitas que respeitam a tradição e um ambiente que acolhe cada cliente como parte da
+          família. Aqui, o aroma do café fresco e o sabor do pão caseiro fazem parte da nossa história e da sua também.
+        </p>
+        <iframe title="video sobre a padaria" width="560" height="315" src="https://www.youtube.com/embed/BVY_yumzGYI"
+          allowfullscreen></iframe>
       </section>
-      </div>
-    </main>
-    
-    <footer>
-      <!-- Redes sociais-->
-      <div>
-        <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
-        <p>Nos visite no seguinte endereço:</p>
-        <address><p>Rua dos Bobos, Nº0</p></address>
-      </div>
-      <p>Todos os direitos reservados</p>
-    </footer>
-  
-</html>
+    </div>
 
+    <!--Diferencial-->
+    <div>
+      <section id="diferencial">
+        <h2>O nosso diferencial</h2>
+        <p>Nosso Diferencial Na Padaria do José, cada receita é feita com alma. Mais do que vender pão, cultivamos
+          memórias com sabor, acolhimento e ingredientes de verdade. Aqui, tradição e carinho são o segredo de cada
+          fornada.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Redes sociais-->
+    <div>
+      <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
+      <p>Nos visite no seguinte endereço:</p>
+      <address>
+        <p>Rua dos Bobos, Nº0</p>
+      </address>
+    </div>
+    <p>Todos os direitos reservados</p>
+  </footer>
+</body>
+
+</html>

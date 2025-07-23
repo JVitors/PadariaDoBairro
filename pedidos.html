@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="./assets/css/estilo.css">
 
@@ -7,22 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
 </head>
+
 <body>
     <header>
         <h1>Padaria do José</h1>
         <img src="./assets/img/logo.png" alt="imagem com a logo do site">
-        <h5><a href="./pedidos.html">Pedidos</a></h5> <h5><a href="./contato.html">Contato</a></h5> <h5><a href="./feedback.html">Feedback</a></h5> <h5><a href="./cadastro.html">Cadastro</a></h5>
+        <h5><a href="./pedidos.html">Pedidos</a></h5>
+        <h5><a href="./contato.html">Contato</a></h5>
+        <h5><a href="./feedback.html">Feedback</a></h5>
+        <h5><a href="./cadastro.html">Cadastro</a></h5>
     </header>
 
     <main>
+        <h1>Faça seu pedido</h1>
         <form>
             <fieldset>
                 <legend>Dados do Cliente</legend>
                 <label for="nomeCompleto">Nome Completo*</label>
                 <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
                 <br>
-                <label for="telefone" id="telefone">Telefone*</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\s\d{5}-\d{4}" maxlength="11" required>
+                <label for="telefone">Telefone*</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx"
+                    pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" maxlength="14" required>
                 <br>
                 <label for="email">E-mail*</label>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>
@@ -40,46 +47,59 @@
                 <input type="radio" name="salgado" id="salgado">
                 <label for="salgado">Salgado</label>
                 <br>
-                <input type="radio" name="bebida" id="bebida">
-                <label for="bebida">Bebida</label>
-                <br>
                 <p><strong>Sabor/Recheio</strong></p>
-                <select name="saborRecheio" id="saborRecheio" id="saborRecheio">
+                <select name="saborRecheio" id="saborRecheio">
                     <option value="selecionarSabor">Selecione um sabor</option>
                     <option value="chocolate">Chocolate</option>
                     <option value="baunilha">Baunilha</option>
-                    <option value="morango">Morango/option>
-                    <option value="coxinhaFrango">Coxinha de Frango</option>
-                    <option value="cafe">Café</option>
+                    <option value="morango">Morango</option>
+                    <option value="frango">Frango</option>
                 </select>
 
                 <p>Tamanho</p>
-                <input type="radio" name="tamanho" id="tamanho">
-                <label for="tamanho">Pequeno</label>
+                <input type="radio" name="pequeno" id="pequeno">
+                <label for="pequeno">Pequeno</label>
                 <br>
-                <input type="radio" name="tamanho" id="tamanho">
-                <label for="tamanho">Médio</label>
+                <input type="radio" name="medio" id="medio">
+                <label for="medio">Médio</label>
                 <br>
-                <input type="radio" name="tamanho" id="tamanho">
-                <label for="tamanho">Grande</label>
+                <input type="radio" name="grande" id="grande">
+                <label for="grande">Grande</label>
                 <br>
                 <br>
                 <label for="dataEntrega">Data de Entrega</label>
                 <input type="date" name="dataEntrega" id="dataEntrega" required>
-
+                <br>
             </fieldset>
+
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+                <label for="observacoes">Observações</label>
+                <input type="text" id="observacoes" name="observacoes" placeholder="Observações">
+                <br>
+                <label for="orcamento">Orçamento</label>
+                <input type="text" id="orcamento" name="orçamento" placeholder="R$ 0,00">
+                <input type="submit" value="Enviar">
+            </fieldset>
+
+
+
         </form>
     </main>
-    
+
     <footer>
         <!-- Redes sociais-->
         <div>
-          <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
-          <p>Nos visite no seguinte endereço:</p>
-          <address><p>Rua dos Bobos, Nº0</p></address>
+            <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a>
+            </p>
+            <p>Nos visite no seguinte endereço:</p>
+            <address>
+                <p>Rua dos Bobos, Nº0</p>
+            </address>
         </div>
         <p>Todos os direitos reservados</p>
-      </footer>
-    
+    </footer>
+
 </body>
+
 </html>
