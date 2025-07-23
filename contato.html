@@ -24,13 +24,13 @@
     <form action="/formularioContato">
       <fieldset>
         <legend>Dados</legend>
-        <label for="nomeCompleto">Nome completo</label>
+        <label for="nomeCompleto">Nome completo*</label>
         <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
         <br>
-        <label for="email">E-mail</label>
+        <label for="email">E-mail*</label>
         <input type="email" id="email" name="email" placeholder="E-mail" required>
         <br>
-        <label for="assunto">Assunto</label>
+        <label for="assunto">Assunto*</label>
         <select name="assunto" id="assunto">
           <option value="selecionarAssunto">Selecione um assunto</option>
           <option value="reclamação">Reclamação</option>
@@ -38,7 +38,7 @@
           <option value="elogio">Elogio</option>
         </select>
         <br>
-        <label for="mensagem">Mensagem</label>
+        <label for="mensagem">Mensagem*</label>
         <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required minlength="10"></textarea>
         <br>
         <label for="telefone">Telefone</label>
