@@ -2,22 +2,56 @@
 <html lang="pt-BR">
 
 <head>
-  <link rel="stylesheet" href="../assets/css/estilo.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Padaria do José Os melhores pães, doces e salgados da cidade.">
+  <meta name="keywords" content="padaria, pães, doces, salgados, café da manhã, delivery">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Padaria do José">
+  <meta property="og:description"
+    content="Padaria do José, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+
   <title>Padaria do José</title>
+
 </head>
 
 <body>
   <header>
-    <h1>Padaria do José</h1>
-    <img src="./assets/img/logo.png" alt="imagem com a logo do site">
-    <h5><a href="./pedidos.html">Pedidos</a></h5>
-    <h5><a href="./contato.html">Contato</a></h5>
-    <h5><a href="./feedback.html">Feedback</a></h5>
-    <h5><a href="./cadastro.html">Cadastro</a></h5>
-  </header>
 
+    <!--<a href="./index.html">
+      <img src="./assets/img/logo.png" alt="imagem com a logo do site">
+    </a>
+    -->
+    <nav class="barra-navegacao">
+      <h1 class="titulo-princial"><a href="./index.html">Padaria do José</a></h1>
+      <div class="menu-links">
+        <a href="./pedidos.html">Pedidos</a>
+        <a href="./contato.html">Contato</a>
+        <a href="./feedback.html">Feedback</a>
+        <a href="./cadastro.html">Cadastro</a>
+      </div>
+    </nav>
+
+    <!-- audio
+    <audio controls loop>
+      <source src="./assets/audio/lofiSong.mp3" type="audio/mp3">
+      Seu navegador não suporta a tag de audio
+    </audio>
+  -->
+  </header>
+  
   <main>
     <h1>Cadastro</h1>
 
@@ -25,47 +59,58 @@
       <fieldset>
         <legend>Informações Pessoais</legend>
 
-        <label for="nomeCompleto">Nome Completo</label>
+        <label for="nomeCompleto">Nome Completo:*</label>
         <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
         <br>
-        <label for="email">E-mail</label>
+        <label for="email">E-mail:*</label>
         <input type="email" id="email" name="email" placeholder="E-mail" required>
         <br>
-        <label for="telefone">Telefone</label>
+        <label for="telefone">Telefone:*</label>
         <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\s\d{5}-\d{4}"
           maxlength="13">
         <br>
-        <label for="dataNascimento">Data de Nascimento</label>
+        <label for="dataNascimento">Data de Nascimento:*</label>
         <input type="date" id="dataNascimento" name="dataNascimento" required>
         <br>
-        <label for="endereco">Endereço</label>
+      </fieldset>
+
+      <!--Endereço-->
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="rua">Rua:*</label>
         <input type="text" id="rua" name="rua" placeholder="Nome da rua" required>
-        <label for="numero">Nº</label>
+        <label for="numero">Nº:*</label>
         <input type="text" id="numero" name="numero" placeholder="Numero" required>
-        <br>
-        <label for="bairro">Bairro</label>
+        <label for="bairro">Bairro:*</label>
         <input type="text" id="bairro" name="bairro" placeholder="Nome do Bairro" required>
-        <label for="cep">CEP</label>
+        <label for="cep">CEP:*</label>
         <input type="text" id="cep" name="cep" placeholder="09784-275" maxlength="8" pattern="\d{5}-?\d{3}" required>
+        <br>
+        <label for="cidade">Cidade:*</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+        <label for="estado">Estado:*</label>
+        <input type="text" id="estado" name="estado" placeholder="Estado">
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" name="complemento" placeholder="Complemento">
         <br>
       </fieldset>
 
       <fieldset>
         <legend>Produtos favoritos</legend>
         <p>Selecione seus produtos favoritos</p>
-        <input type="checkbox" id="paoFrances" name="paoFrances" value="paoFrances">
+        <input type="checkbox" id="paoFrances" name="produtos" value="paoFrances">
         <label for="paoFrances">Pão Francês</label>
         <br>
-        <input type="checkbox" id="paoIntegral" name="paoIntegral" value="paoIntegral">
+        <input type="checkbox" id="paoIntegral" name="produtos" value="paoIntegral">
         <label for="paoIntegral">Pão Integral</label>
         <br>
-        <input type="checkbox" id="boloFuba" name="boloFuba" value="boloFuba">
+        <input type="checkbox" id="boloFuba" name="produtos" value="boloFuba">
         <label for="boloFuba">Bolo de Fubá</label>
         <br>
-        <input type="checkbox" id="coxinhaFrango" name="coxinhaFrango" value="coxinhaFrango">
+        <input type="checkbox" id="coxinhaFrango" name="produtos" value="coxinhaFrango">
         <label for="coxinhaFrango">Coxinha de Frango</label>
         <br>
-        <input type="checkbox" id="cafe" name="cafe" value="cafe">
+        <input type="checkbox" id="cafe" name="produtos" value="cafe">
         <label for="cafe">Café</label>
         <br>
       </fieldset>
@@ -84,19 +129,27 @@
     </form>
   </main>
 
+
   <footer>
     <!-- Redes sociais-->
-    <div>
-      <p>Redes sociais: <a href="http://instagram.com">Instagram</a> - <a href="http://facebook.com">Facebook</a></p>
-      <p>Nos visite no seguinte endereço:</p>
-      <address>
-        <p>Rua dos Bobos, Nº0</p>
-      </address>
+
+    <div class="footer">
+      <div class="endereco">
+        <p>Nos visite no seguinte endereço:</p>
+        <address>
+          <p>Rua dos Bobos, Nº0</p>
+        </address>
+        <p>Todos os direitos reservados</p>
+      </div>
+
+      <div class="redes-sociais">
+        <p>Redes sociais:</p>
+        <a href="http://instagram.com">Instagram</a>
+        <a href="http://facebook.com">Facebook</a>
+      </div>
     </div>
-    <p>Todos os direitos reservados</p>
+
   </footer>
-
-
 </body>
 
 </html>
