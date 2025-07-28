@@ -1,40 +1,26 @@
 # 🥖 Projeto: Site da Padaria do José
 
 ## 📌 Descrição
-Site simples desenvolvido em HTML para divulgar a Padaria do José. Ideal para iniciantes, este projeto inclui as principais seções de uma página institucional, como apresentação, produtos, horário de funcionamento e contato.
 
-## 🧱 Tecnologias Utilizadas
+Projeto de site para a estabelecimento ficticio "Padaraia do José".
+Feito de acordo com as aulas fornecidas pela FAT, no curso de programação web.
+
+
+## Tecnologias Utilizadas
 - HTML5  
-*(Sem uso de CSS ou JavaScript neste estágio inicial)*
+- CSS
 
-## 🧩 Estrutura do Código
-O site contém as seguintes partes:
+📚 Aprendizados Aplicados
 
-- **`<header>`**: Título e saudação de boas-vindas.
-- **`<nav>`**: Menu de navegação com links internos.
-- **Apresentação da Padaria**: Informações iniciais sobre os serviços.
-- **Seções de Produtos**:
-  - Lista de pães em `<ul>`
-  - Lista de bolos em `<ol>`
-- **Informações de Contato**:
-  - Número de delivery via WhatsApp
-  - Endereço físico
-  - Links para redes sociais
-- **Horário de Funcionamento**: Lista com os dias e horários.
-- **Sobre Nós**: Texto sobre a origem e filosofia da padaria.
-- **Nosso Diferencial**: Parágrafo com foco no atendimento e qualidade.
+- Uso correto das tags semânticas
+- Organização e reutilização de conteúdo
+- Criação de tabelas e formulários funcionais
+- Inserção de multimídia (vídeo e imagens)
 
-## 📷 Funcionalidades
-- Estrutura semântica com tags HTML adequadas
-- Separação clara das seções
-- Listas ordenadas e não ordenadas
-- Links externos para redes sociais
+- CSS aplicado no header e footer das paginas, em tabelos e formularios
 
-## 🧁 Contato
-📞 WhatsApp: (0xx) 9xxxx-xxxx  
-📍 Endereço: Rua dos Bobos, Nº0  
-🔗 [Instagram](http://instagram.com) | [Facebook](http://facebook.com)
+Versão online do projeto: https://padariadobairro.netlify.app/
 
 ---
 
-Desenvolvido com carinho por um João Vitor 🍞
+Desenvolvido por JVitors
