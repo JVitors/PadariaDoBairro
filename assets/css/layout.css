@@ -1,0 +1,28 @@
+/* ===========================================
+   LAYOUT E CONTAINERS
+   =========================================== */
+
+/* Container responsivo */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "main-header"
+        "hero"
+        "products"
+        "testimony"
+        "differential"
+        "cadastro"
+        "galeria"
+        "venha-visitar"
+        "sobre-nos"
+        "footer";
+}

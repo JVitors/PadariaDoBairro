@@ -34,15 +34,19 @@
       <img src="./assets/img/logo.png" alt="imagem com a logo do site">
     </a>
     -->
-    <nav class="barra-navegacao">
-      <h1 class="titulo-princial"><a href="./index.html">Padaria do José</a></h1>
-      <div class="menu-links">
-        <a href="./pedidos.html">Pedidos</a>
-        <a href="./contato.html">Contato</a>
-        <a href="./feedback.html">Feedback</a>
-        <a href="./cadastro.html">Cadastro</a>
+    <div class="fundocabecalho">
+      <div class="container">
+        <nav class="barra-navegacao">
+          <h1 class="titulo-princial"><a href="./index.html">Padaria do José</a></h1>
+          <div class="menu-links">
+            <a href="./pedidos.html">Pedidos</a>
+            <a href="./contato.html">Contato</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./cadastro.html">Cadastro</a>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
 
     <!-- audio
     <audio controls loop>
@@ -51,101 +55,120 @@
     </audio>
   -->
   </header>
-  
-  <main>
-    <h1>Cadastro</h1>
 
-    <form action="/formularioCadastro">
-      <fieldset>
-        <legend>Informações Pessoais</legend>
+  <main class="container">
+    <h2>Cadastro</h2>
+      <form action="/formularioCadastro">
+        <div class="formulario-lado">
+        <div>
+        <fieldset>
+          <legend>Dados básicos</legend>
+          <label for="nomeCompleto">Nome Completo:*</label>
+          <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
+          
+          <label for="dataNascimento">Data de Nascimento:*</label>
+          <input type="date" id="dataNascimento" name="dataNascimento" required>
+          
+        </fieldset>
+        </div>
 
-        <label for="nomeCompleto">Nome Completo:*</label>
-        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
-        <br>
-        <label for="email">E-mail:*</label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-        <br>
-        <label for="telefone">Telefone:*</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\s\d{5}-\d{4}"
-          maxlength="13">
-        <br>
-        <label for="dataNascimento">Data de Nascimento:*</label>
-        <input type="date" id="dataNascimento" name="dataNascimento" required>
-        <br>
-      </fieldset>
+        <div>
+        <fieldset>
+          <legend>Dados de Contato</legend>
+          <label for="email">E-mail:*</label>
+          <input type="email" id="email" name="email" placeholder="E-mail" required>
 
-      <!--Endereço-->
-      <fieldset>
-        <legend>Endereço</legend>
-        <label for="rua">Rua:*</label>
-        <input type="text" id="rua" name="rua" placeholder="Nome da rua" required>
-        <label for="numero">Nº:*</label>
-        <input type="text" id="numero" name="numero" placeholder="Numero" required>
-        <label for="bairro">Bairro:*</label>
-        <input type="text" id="bairro" name="bairro" placeholder="Nome do Bairro" required>
-        <label for="cep">CEP:*</label>
-        <input type="text" id="cep" name="cep" placeholder="09784-275" maxlength="8" pattern="\d{5}-?\d{3}" required>
-        <br>
-        <label for="cidade">Cidade:*</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
-        <label for="estado">Estado:*</label>
-        <input type="text" id="estado" name="estado" placeholder="Estado">
-        <label for="complemento">Complemento</label>
-        <input type="text" id="complemento" name="complemento" placeholder="Complemento">
-        <br>
-      </fieldset>
+          <label for="telefone">Telefone:*</label>
+          <input type="text" id="telefone" name="telefone" placeholder="(0xx)xxxx-xxxx" required>
+        </fieldset>
+        </div>
+      </div>
 
-      <fieldset>
-        <legend>Produtos favoritos</legend>
-        <p>Selecione seus produtos favoritos</p>
-        <input type="checkbox" id="paoFrances" name="produtos" value="paoFrances">
-        <label for="paoFrances">Pão Francês</label>
-        <br>
-        <input type="checkbox" id="paoIntegral" name="produtos" value="paoIntegral">
-        <label for="paoIntegral">Pão Integral</label>
-        <br>
-        <input type="checkbox" id="boloFuba" name="produtos" value="boloFuba">
-        <label for="boloFuba">Bolo de Fubá</label>
-        <br>
-        <input type="checkbox" id="coxinhaFrango" name="produtos" value="coxinhaFrango">
-        <label for="coxinhaFrango">Coxinha de Frango</label>
-        <br>
-        <input type="checkbox" id="cafe" name="produtos" value="cafe">
-        <label for="cafe">Café</label>
-        <br>
-      </fieldset>
+        <!--Endereço-->
+        <fieldset>
+          <legend>Endereço</legend>
+          <div class="formulario-adicional">
+          <div>
+          <label for="rua">Rua:*</label>
+          <input type="text" id="rua" name="rua" placeholder="Nome da rua" required>
+          
+          
+          <label for="numero">Nº:*</label>
+          <input type="text" id="numero" name="numero" placeholder="Numero" required>
+          
+          <label for="bairro">Bairro:*</label>
+          <input type="text" id="bairro" name="bairro" placeholder="Nome do Bairro" required>
+          
+          <label for="cep">CEP:*</label>
+          <input type="text" id="cep" name="cep" placeholder="09784-275" maxlength="8" pattern="\d{5}-?\d{3}" required>
+          </div>
 
-      <fieldset>
-        <legend>Termos</legend>
-        <input type="checkbox" name="aceitaPromocoes" id="aceitaPromocoes" required>
-        <label for="aceitaPromocoes">Aceito receber promoções</label>
-        <br>
-        <input type="checkbox" name="aceitaTermos" id="aceitaTermos" required>
-        <label for="aceitaTermos">Aceito os termos de uso</label>
-        <br>
-        <input type="submit" value="Enviar">
-      </fieldset>
+          <div>
+          <label for="cidade">Cidade:*</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+          
+          <label for="estado">Estado:*</label>
+          <input type="text" id="estado" name="estado" placeholder="Estado">
+          
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+          </div>
+        </div>
+        </fieldset>
 
-    </form>
+        <fieldset>
+          <legend>Produtos favoritos</legend>
+          <p>Selecione seus produtos favoritos</p>
+          <input type="checkbox" id="paoFrances" name="produtos" value="paoFrances">
+          <label for="paoFrances">Pão Francês</label>
+          <br>
+          <input type="checkbox" id="paoIntegral" name="produtos" value="paoIntegral">
+          <label for="paoIntegral">Pão Integral</label>
+          <br>
+          <input type="checkbox" id="boloFuba" name="produtos" value="boloFuba">
+          <label for="boloFuba">Bolo de Fubá</label>
+          <br>
+          <input type="checkbox" id="coxinhaFrango" name="produtos" value="coxinhaFrango">
+          <label for="coxinhaFrango">Coxinha de Frango</label>
+          <br>
+          <input type="checkbox" id="cafe" name="produtos" value="cafe">
+          <label for="cafe">Café</label>
+          <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Termos</legend>
+          <input type="checkbox" name="aceitaPromocoes" id="aceitaPromocoes" required>
+          <label for="aceitaPromocoes">Aceito receber promoções</label>
+          <br>
+          <input type="checkbox" name="aceitaTermos" id="aceitaTermos" required>
+          <label for="aceitaTermos">Aceito os termos de uso</label>
+          <br>
+          <input type="submit" value="Enviar">
+        </fieldset>
+
+      </form>
   </main>
 
 
   <footer>
     <!-- Redes sociais-->
 
-    <div class="footer">
-      <div class="endereco">
-        <p>Nos visite no seguinte endereço:</p>
-        <address>
-          <p>Rua dos Bobos, Nº0</p>
-        </address>
-        <p>Todos os direitos reservados</p>
-      </div>
+    <div class="fundorodape">
+      <div class="footer container">
+        <div class="endereco">
+          <p>Nos visite no seguinte endereço:</p>
+          <address>
+            <p>Rua dos Bobos, Nº0</p>
+          </address>
+          <p>Todos os direitos reservados</p>
+        </div>
 
-      <div class="redes-sociais">
-        <p>Redes sociais:</p>
-        <a href="http://instagram.com">Instagram</a>
-        <a href="http://facebook.com">Facebook</a>
+        <div class="redes-sociais">
+          <p>Redes sociais:</p>
+          <a href="http://instagram.com">Instagram</a>
+          <a href="http://facebook.com">Facebook</a>
+        </div>
       </div>
     </div>
 

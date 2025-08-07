@@ -4,223 +4,346 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Padaria do José Os melhores pães, doces e salgados da cidade.">
-  <meta name="keywords" content="padaria, pães, doces, salgados, café da manhã, delivery">
+  <meta name="description" content="Padatia do José - Pães frescos todos os dias">
+  <meta name="keywords" content="padaria, pães, doces. salgados, café da manhã, delivery">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Padaria do José">
-  <meta property="og:description"
-    content="Padaria do José, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+  <meta property="og:title" content="Padaria do José, Pães Pães frescos todos os dias">
+  <meta property="description"
+    content="Tudo a padaria Casa do Pão, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="assets/css/newstyle.css">
 
   <title>Padaria do José</title>
-
 </head>
 
 <body>
-  <header>
+  <!--Cabeçalho-->
+  <header id="main-header">
+    <div class="container">
+      <div class="cabecalho-content">
+        <!--Logo-->
+        <a href="">
+          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+        </a>
 
-    <!--<a href="./index.html">
-      <img src="./assets/img/logo.png" alt="imagem com a logo do site">
-    </a>
-    -->
-    <nav class="barra-navegacao">
-      <h1 class="titulo-princial"><a href="./index.html">Padaria do José</a></h1>
-      <div class="menu-links">
-        <a href="./pedidos.html">Pedidos</a>
-        <a href="./contato.html">Contato</a>
-        <a href="./feedback.html">Feedback</a>
-        <a href="./cadastro.html">Cadastro</a>
+        <!--Navegação principal-->
+        <nav>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Diferenciais</a></li>
+            <li><a href="">Galeria</a></li>
+            <li><a href="">Onde Estamos</a></li>
+            <li><a href="">Sobre Nós</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+        <ul>
+          <li><a href="">Criar conta</a></li>
+          <li><a href="">Entrar</a></li>
+        </ul>
       </div>
-    </nav>
-
-    <!-- audio
-    <audio controls loop>
-      <source src="./assets/audio/lofiSong.mp3" type="audio/mp3">
-      Seu navegador não suporta a tag de audio
-    </audio>
-  -->
+    </div>
   </header>
 
-  <main>
+  <!--conteudo principal-->
+  <main id="conteudo-principal">
+    <!--Icones flutuantes-->
     <div>
-      <h1>Padaria do José!</h1>
-      <p>Pães quentinhos todas as manhãs, venha já comprar o seu! Também temos bolos, salgados e muito mais!</p>
-    </div>
-    <!-- Nossos produtos-->
+      <!--up-arrow-->
+      <a href="#inicio" class="float">
+        <i class="fa fa-plus my-float"><i class="bi bi-whatsapp"></i></i>
+      </a>
 
-    <div>
-      <section id="cardapio">
-        <h2>Conheça nosso cardapio</h2>
-        <video controls width="300" autoplay loop>
-          <source src="./assets/vid/padaria.mp4" type="video/mp4">
-          Seu navegador não suporta a tag de video.
-        </video>
-      </section>
-    </div>
-    <div> <!--tabela-->
-      <table>
-
-        <!--titulo das colunas-->
-        <thead>
-          <tr>
-            <th>Categoria</th>
-            <th>Produto</th>
-            <th>Descrição</th>
-            <th>Preço</th>
-            <th>Imagem</th>
-          </tr>
-        </thead>
-
-        <!--conteudo da tabela-->
-        <tbody>
-          <tr>
-            <td>Pães</td>
-            <td>Pão Francês</td>
-            <td>Tradicional</td>
-            <td>R$ 0,80</td>
-            <td><img src="./assets/img/cardapio/paoFrances.jpg" alt="Imagem de um pão frances" width="150" height="150">
-            </td>
-          </tr>
-          <tr>
-            <td>Pães</td>
-            <td>Pão Integral</td>
-            <td>Feito com farinha integral</td>
-            <td>R$ 2,50</td>
-            <td><img src="./assets/img/cardapio/paoIntegral.jpg" alt="Imagem de pão integral fatiado" width="150"
-                height="150"></td>
-          </tr>
-          <tr>
-            <td>Bolos</td>
-            <td>Bolo de Fubá</td>
-            <td>Com erva-doce</td>
-            <td>R$ 10,00</td>
-            <td><img src="./assets/img/cardapio/boloFuba.jpg" alt="Imagem de um bolo de fuba" width="150" height="150">
-            </td>
-          </tr>
-          <tr>
-            <td>Salgados</td>
-            <td>Coxinha</td>
-            <td>Frango</td>
-            <td>R$ 6,00</td>
-            <td><img src="./assets/img/cardapio/coxinhaFrango.jpg" alt="Imagem de coxinhas" width="150" height="150">
-            </td>
-          </tr>
-          <tr>
-            <td>Bebidas</td>
-            <td>Café</td>
-            <td>Café preto coado na hora</td>
-            <td>R$ 3,00</td>
-            <td><img src="./assets/img/cardapio/cafe.jpg" alt="Imagem de um café" width="150" height="150"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h6>*imagens meramente ilustrativas</h6>
+      <!--whatsapp-->
+      <a href="#" class="float2">
+        <i class="fa fa-plus my-float"><i class="bi bi-arrow-up"></i></i>
+      </a>
     </div>
 
+    <!--Hero Section-->
 
-    <div>
-      <p><a href="./pedidos.html">Clique aqui para fazer um pedido online</a></p>
-      <p>Temos delivery pelo whatsapp: (0xx)9xxxx-xxxx</p>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-container">
+          <article class="hero-box">
+            <div>
+              <h1>Padaria do José</h1>
+              <h2>Sabor e tradição que você confia!</h2>
+              <p>
+                Pães artesanais, doces irresistíveis e salgados feitos com
+                paixão, fresquinhos para você a cada dia.
+              </p>
+            </div>
+            <div>
+              <a class="btn" href="#cardapio">Confira nosso cardapio</a>
+            </div>
+          </article>
+
+          <div class="hero-image">
+            <img src="./assets/img/hero-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cardapio -->
+
+    <section id="products">
+      <div class="container">
+
+        <div class="cardapio-texto">
+          <img class="logo" src="./assets/img/logo.png" alt="Logo da Padaria do José">
+          <h2>Nossos produtos mais queridos</h2>
+          <p>Selecionados especialmente por nossos clientes</p>
+        </div>
+        <div class="container">
+          <div class="cardapio">
+            <div class="cardapio-cards">
+
+              <!-- Produto 1 -->
+              <div class="produto">
+                <img src="./assets/img/galeria/1.png" alt="">
+                <p class="red-button"><i class="bi bi-fire"></i> Promoção</p>
+
+                <div class="produto-texto">
+                  <strong>Pão francês crocante</strong>
+                  <div id="estrelas-avaliacao">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>R$ 0,80 por Kg</p>
+                  <a href="" class="btn-cardapio">Adicionar <i class="bi bi-cart-plus-fill"></i></a>
+                </div>
+              </div>
+
+              <!-- Produto 2 -->
+              <div class="produto">
+                <img src="./assets/img/galeria/2.png" alt="">
+                <div class="produto-texto">
+                  <strong>Pão francês crocante</strong>
+                  <div id="estrelas-avaliacao">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>R$ 0,80 por Kg</p>
+
+                  <a href="" class=" btn-cardapio">Adicionar <i class="bi bi-cart-plus-fill"></i></a>
+                </div>
+              </div>
+
+              <!-- Produto 3 -->
+
+              <div class="produto">
+                <img src="./assets/img/galeria/6.png" alt="">
+                <p class="red-button"><i class="bi bi-fire"></i> Novo</p>
+
+                <div class="produto-texto">
+                  <strong>Pão francês crocante</strong>
+                  <div id="estrelas-avaliacao">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>R$ 0,80 por Kg</p>
+
+                  <a href="" class="btn btn-cardapio">Adicionar <i class="bi bi-cart-plus-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="cardapio-footer">
+              <a class="btn" href="">ver cardapio completo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--Depoimentos-->
+    <section id="testimony">
+      <div class="container">
+        <div class="depoimento-texto">
+          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+          <h2>O que nossos clientes dizem</h2>
+          <p>Cada sorriso é nossa maior receita</p>
+        </div>
+
+
+        <div>
+          <div class="depoimento-cards">
+
+            <!-- Depoimento 1 -->
+            <div class="depoimento-item">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <q>
+                A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
+                Tudo
+                é
+                fresquinho e o atendimento é sempre acolhedor.
+              </q>
+              <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
+              <img src="./assets/img/depoimento/maria.png" alt="">
+
+            </div>
+
+            <!-- Depoimento 2 -->
+            <div class="depoimento-item">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <q>
+                A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
+                Tudo
+                é
+                fresquinho e o atendimento é sempre acolhedor.
+              </q>
+              <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
+              <img src="./assets/img/depoimento/maria.png" alt="">
+
+            </div>
+            <!-- Depoimento 3 -->
+            <div class="depoimento-item">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <q>
+                A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
+                Tudo
+                é
+                fresquinho e o atendimento é sempre acolhedor.
+              </q>
+              <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
+              <img src="./assets/img/depoimento/maria.png" alt="">
+
+            </div>
+
+          </div>
+
+          <div class="depoimento-texto">
+            <p>Quer deixar seu depoimento também?</p>
+            <a class="btn" href="">Deixar um depoimento</a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+  
+      <!--nosso diferencial-->
+
+    <section id="differential" class="differential">
+      <div>
+        <h2>Nossos diferenciais</h2>
+      </div>
+      <div>
+        <ul>
+          <li>Pães sempre quentinhos e frescos para você</li>
+          <li>Apenas os melhores ingredientes em nossos produtos</li>
+          <li>Receitas de família passadas por gerações</li>
+          <li>Entregamos em até 30 minutos na sua casa</li>
+        </ul>
+      </div>
+    </section>
+
+  
+  
+    <!--Junte se a padaria-->
+
+ <section id="join-us">
+  <div class="container">
+    <div class="join-us-header">
+      <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+      <h2>Junte-se à nossa padaria!</h2>
     </div>
-
-    <!--Horario de funcionamento-->
-    <div>
-      <section id="horario">
-        <h2>Horario de Funcionamento</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Dias</th>
-              <th>Horario</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Segunda-feira</td>
-              <td>06:00 as 18:00</td>
-            </tr>
-            <tr>
-              <td>Terça-feira</td>
-              <td>06:00 as 18:00</td>
-            </tr>
-            <tr>
-              <td>Quarta-feira</td>
-              <td>06:00 as 18:00</td>
-            </tr>
-            <tr>
-              <td>Quinta-feira</td>
-              <td>06:00 as 18:00</td>
-            </tr>
-            <tr>
-              <td>Sexta-feira</td>
-              <td>06:00 as 18:00</td>
-            </tr>
-            <tr>
-              <td>Sábado</td>
-              <td>06:00 as 12:00</td>
-            </tr>
-          </tbody>
-
-        </table>
-      </section>
-    </div>
-
-    <!--Sobre nós-->
-    <div>
-      <section id="sobrenos">
-        <h2>Sobre nós</h2>
-        <p>Padaria do José Fundada com amor e dedicação, a Padaria do José é aquele cantinho especial onde o pão sempre
-          sai quentinho e o atendimento tem gosto de amizade. Somos apaixonados por transformar ingredientes simples em
-          momentos deliciosos, com receitas que respeitam a tradição e um ambiente que acolhe cada cliente como parte da
-          família. Aqui, o aroma do café fresco e o sabor do pão caseiro fazem parte da nossa história e da sua também.
+    <div class="join-us-flex">
+      <video class="video-padaria" src="./assets/vid/padaria.mp4" autoplay loop></video>
+      <div class="join-us-text">
+        <p>
+          Cadastre-se para fazer pedidos online, receber promoções exclusivas e ficar por dentro das novidades.
         </p>
-        <iframe title="video sobre a padaria" width="560" height="315" src="https://www.youtube.com/embed/BVY_yumzGYI"
-          allowfullscreen></iframe>
-      </section>
+        <a class="btn" href="">Criar minha conta</a>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!--Diferencial-->
-    <div>
-      <section id="diferencial">
-        <h2>O nosso diferencial</h2>
-        <p>Nosso Diferencial Na Padaria do José, cada receita é feita com alma. Mais do que vender pão, cultivamos
-          memórias com sabor, acolhimento e ingredientes de verdade. Aqui, tradição e carinho são o segredo de cada
-          fornada.</p>
-      </section>
+
+<!--Galeria-->
+<section id="gallery">
+  <div class="container">
+     <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+    <h2>Galeria</h2>
+    <div class="gallery-grid">
+      <img src="./assets/img/galeria/1.png" alt="Galeria 1">
+      <img src="./assets/img/galeria/2.png" alt="Galeria 2">
+      <img src="./assets/img/galeria/4.png" alt="Galeria 3">
+      <img src="./assets/img/galeria/5.png" alt="Galeria 4">
+      <img src="./assets/img/galeria/6.png" alt="Galeria 1">
+      <img src="./assets/img/galeria/8.png" alt="Galeria 2">
+      <img src="./assets/img/galeria/9.png" alt="Galeria 3">
+      <img src="./assets/img/galeria/10.png" alt="Galeria 4">
     </div>
+  </div>
+</section>
+
+
   </main>
-
-  <footer>
-    <!-- Redes sociais-->
-
-    <div class="footer">
-      <div class="endereco">
-        <p>Nos visite no seguinte endereço:</p>
-        <address>
-          <p>Rua dos Bobos, Nº0</p>
-        </address>
-        <p>Todos os direitos reservados</p>
-      </div>
-
-      <div class="redes-sociais">
-        <p>Redes sociais:</p>
-        <a href="http://instagram.com">Instagram</a>
-        <a href="http://facebook.com">Facebook</a>
+  <!--Rodapé-->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+        </div>
+        <div class="footer-text">
+          <p>
+            Padaria do José - Rua das Flores, 123 - Centro - São Paulo/SP - CEP: 01234-567
+          </p>
+          <p>
+            Telefone: (11) 1234-5678 - Email: contato@padaria.com
+          </p>
+        </div>
       </div>
     </div>
-
   </footer>
+
 </body>
 
 </html>
