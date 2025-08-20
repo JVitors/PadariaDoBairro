@@ -4,121 +4,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Padaria do José Os melhores pães, doces e salgados da cidade.">
-  <meta name="keywords" content="padaria, pães, doces, salgados, café da manhã, delivery">
+  <meta name="description" content="Padatia do José - Pães frescos todos os dias">
+  <meta name="keywords" content="padaria, pães, doces. salgados, café da manhã, delivery">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Padaria do José">
-  <meta property="og:description"
-    content="Padaria do José, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+  <meta property="og:title" content="Padaria do José, Pães Pães frescos todos os dias">
+  <meta property="description"
+    content="Tudo a padaria Casa do Pão, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
 
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>Padaria do José</title>
-
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>Contato</title>
 </head>
 
 <body>
-  <header>
+  <!--Cabeçalho-->
+  <header id="main-header">
+    <div class="container">
+      <div class="cabecalho-content">
+        <!--Logo-->
+        <a href="">
+          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+        </a>
 
-    <!--<a href="./index.html">
-      <img src="./assets/img/logo.png" alt="imagem com a logo do site">
-    </a>
-    -->
-    <nav class="barra-navegacao">
-      <h1 class="titulo-princial"><a href="./index.html">Padaria do José</a></h1>
-      <div class="menu-links">
-        <a href="./pedidos.html">Pedidos</a>
-        <a href="./contato.html">Contato</a>
-        <a href="./feedback.html">Feedback</a>
-        <a href="./cadastro.html">Cadastro</a>
+        <!--Navegação principal-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#testimony">Depoimentos</a></li>
+            <li><a href="#differential">Diferenciais</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#location">Onde Estamos</a></li>
+            <li><a href="#join-us">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <ul>
+          <li><a href="signup.html">Criar conta</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
       </div>
-    </nav>
-
-    <!-- audio
-    <audio controls loop>
-      <source src="./assets/audio/lofiSong.mp3" type="audio/mp3">
-      Seu navegador não suporta a tag de audio
-    </audio>
-  -->
+    </div>
   </header>
 
   <main>
-    <h2>Entre em contato com a padaria</h2>
+    <div class="container">
+      <div class="smallContainer">
+        <div class="formTitle">
+          <h1>Fale Conosco</h1>
+        </div>
 
-    <form action="/formularioContato">
-      <fieldset>
-        <legend>Dados</legend>
-        <label for="nomeCompleto">Nome completo:*</label>
-        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
-        <br>
-        <label for="email">E-mail:*</label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-        <br>
-        <label for="assunto">Assunto:*</label>
-        <select name="assunto" id="assunto">
-          <option value="selecionarAssunto">Selecione um assunto:</option>
-          <option value="reclamação">Reclamação:</option>
-          <option value="sugestão">Sugestão:</option>
-          <option value="elogio">Elogio:</option>
-        </select>
-        <br>
-        <label for="mensagem">Mensagem:*</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required minlength="10"></textarea>
-        <br>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
-          maxlength="14">
-        <br>
-        <p>Avaliação*:</p>
+        <form action="/formularioContato">
+          <fieldset class="teste">
 
-        <input type="radio" id="avaliacaoBoa" name="avaliacao" value="boa" required>
-        <label for="avaliacaoBoa">Boa</label>
-        <br>
+            <legend>Dados Basicos</legend>
+            <label for="nomeCompleto">Nome completo:*</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
 
-        <input type="radio" id="avaliacaoRegular" name="avaliacao" value="regular">
-        <label for="avaliacaoRegular">Regular</label>
-        <br>
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
 
-        <input type="radio" id="avaliacaoRuim" name="avaliacao" value="ruim">
-        <label for="avaliacaoRuim">Ruim</label>
-        <br>
-        <input type="submit" value="Enviar">
+          </fieldset>
 
-      </fieldset>
-    </form>
-  </main>
+          <fieldset class="teste">
+            <legend>Mensagem</legend>
 
+            <label for="assunto">Assunto:*</label>
+            <input type="text" name="assunto" id="assunto">
 
-  <footer>
-    <!-- Redes sociais-->
+            <label for="mensagem">Mensagem:*</label>
+            <input type="text" name="mensagem" id="mensagem">
 
-    <div class="footer">
-      <div class="endereco">
-        <p>Nos visite no seguinte endereço:</p>
-        <address>
-          <p>Rua dos Bobos, Nº0</p>
-        </address>
-        <p>Todos os direitos reservados</p>
-      </div>
+            <input type="submit" value="Enviar">
 
-      <div class="redes-sociais">
-        <p>Redes sociais:</p>
-        <a href="http://instagram.com">Instagram</a>
-        <a href="http://facebook.com">Facebook</a>
+          </fieldset>
+        </form>
       </div>
     </div>
+  </main>
 
+  <!--Rodapé-->
+  <footer id="footer">
+    <div class="container">
+      <div class="rodape">
+        <div class="footer-list">
+          <h4>Informações</h4>
+          <ul>
+            <li>Política de Privacidade</li>
+            <li>Termos de Uso</li>
+            <li>Política de Cookies</li>
+            <li>Perguntas Frequentes</li>
+            <li>Trabalhe Conosco</li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h4>Contato</h4>
+          <ul>
+            <li>Fale conosco</li>
+            <li>Trabalhe conosco</li>
+            <li>Deixe seu feedback</li>
+            <li>(11) 99999-9999</li>
+            <li>contato@casadopao.com.br</li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <h4>Certificações</h4>
+          <ul>
+            <li>ISO 9001</li>
+            <li>ANVISA</li>
+            <li>Orgânico Certificado</li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+        <p>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</p>
+
+        <div class="line"></div>
+
+        <div class="rights">
+          <p>© 2024 Padaria do José. Todos os direitos reservados.</p>
+          <p>CNPJ: 12.345.678/0001-90 | Desenvolvido com ❤️ por Cauany Rodrigues</p>
+        </div>
+      </div>
+    </div>
   </footer>
+  <!--Icones flutuantes-->
+  <div>
+    <!--up-arrow-->
+    <a href="https://web.whatsapp.com" class="whatsappFloat">
+      <i class="fa fa-plus my-float"><i class="bi bi-whatsapp"></i></i>
+    </a>
+
+    <!--whatsapp-->
+    <a href="#inicio" class="pageTopFloat">
+      <i class="fa fa-plus my-float"><i class="bi bi-arrow-up"></i></i>
+    </a>
+  </div>
 </body>
 
 </html>

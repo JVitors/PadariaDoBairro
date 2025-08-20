@@ -1,0 +1,70 @@
+fieldset {
+  margin-bottom: 20px;
+  border: 3px solid #ccc;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.formulario-lado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+}
+
+.formulario-lado>div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.signupButtonsPos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.formTitle { /*Titulo do formulario*/
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+/*-------------PAGINA DE LOGIN E CONTATO-------------*/
+.smallContainer {                      /*Cria a caixa de login*/
+  max-width: 780px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.compact input, .compact button {  /*faz com que os elementos de entrada e botão ocupem toda a largura disponível*/
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}

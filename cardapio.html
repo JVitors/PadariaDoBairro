@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Padatia do José - Pães frescos todos os dias">
+    <meta name="keywords" content="padaria, pães, doces. salgados, café da manhã, delivery">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Padaria do José, Pães Pães frescos todos os dias">
+    <meta property="description"
+        content="Tudo a padaria Casa do Pão, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header id="main-header">
+        <div class="container">
+            <div class="cabecalho-content">
+                <!--Logo-->
+                <a href="">
+                    <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+                </a>
+
+                <!--Navegação principal-->
+                <nav>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="#testimony">Depoimentos</a></li>
+                        <li><a href="#differential">Diferenciais</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#location">Onde Estamos</a></li>
+                        <li><a href="#join-us">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li><a href="signup.html">Criar conta</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="cardapio">
+            <div class="container">
+
+
+                <div class="container">
+
+                    <div class="cardapio-cards">
+
+                        <!-- Produto 1 -->
+                        <div class="produto">
+                            <img src="./assets/img/galeria/1.png" alt="">
+                            <p class="promoTag"><i class="bi bi-fire"></i> Promoção</p>
+
+                            <div class="produto-texto">
+                                <strong>Pão francês crocante</strong>
+                                <div class="estrelas-avaliacao">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>R$ 0,80 por Kg</p>
+                                <button class="btn-cardapio" onclick="addToCart('Product 1', 10.00)">Adicionar <i
+                                        class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Produto 2 -->
+                        <div class="produto">
+                            <img src="./assets/img/galeria/2.png" alt="">
+                            <div class="produto-texto">
+                                <strong>Pão francês crocante</strong>
+                                <div class="estrelas-avaliacao">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>R$ 0,80 por Kg</p>
+
+                                <button class="btn-cardapio" onclick="addToCart('Product 1', 10.00)">Adicionar <i
+                                        class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Produto 3 -->
+
+                        <div class="produto">
+                            <img src="./assets/img/galeria/6.png" alt="">
+                            <p class="promoTag"><i class="bi bi-fire"></i> Novo</p>
+
+                            <div class="produto-texto">
+                                <strong>Pão francês crocante</strong>
+                                <div class="estrelas-avaliacao">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>R$ 0,80 por Kg</p>
+
+                                <button class="btn-cardapio" onclick="addToCart('Product 1', 10.00)">Adicionar <i
+                                        class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardapio-footer">
+                        <a class="btn" href="">Ver cardapio completo</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--Rodapé-->
+    <footer id="footer">
+        <div class="container">
+            <div class="rodape">
+                <div class="footer-list">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li>Política de Privacidade</li>
+                        <li>Termos de Uso</li>
+                        <li>Política de Cookies</li>
+                        <li>Perguntas Frequentes</li>
+                        <li>Trabalhe Conosco</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>Fale conosco</li>
+                        <li>Trabalhe conosco</li>
+                        <li>Deixe seu feedback</li>
+                        <li>(11) 99999-9999</li>
+                        <li>contato@casadopao.com.br</li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h4>Certificações</h4>
+                    <ul>
+                        <li>ISO 9001</li>
+                        <li>ANVISA</li>
+                        <li>Orgânico Certificado</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Whatsapp</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <p>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</p>
+
+                <div class="line"></div>
+
+                <div class="rights">
+                    <p>© 2024 Padaria do José. Todos os direitos reservados.</p>
+                    <p>CNPJ: 12.345.678/0001-90 | Desenvolvido com ❤️ por Cauany Rodrigues</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Icones flutuantes-->
+    <div>
+        <!--up-arrow-->
+        <a href="https://web.whatsapp.com" class="whatsappFloat">
+            <i class="fa fa-plus my-float"><i class="bi bi-whatsapp"></i></i>
+        </a>
+
+        <!--whatsapp-->
+        <a href="#inicio" class="pageTopFloat">
+            <i class="fa fa-plus my-float"><i class="bi bi-arrow-up"></i></i>
+        </a>
+    </div>
+</body>

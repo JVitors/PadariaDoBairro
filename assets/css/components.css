@@ -1,0 +1,197 @@
+/*Botões*/
+
+.btn {
+  color: var(--cor-fundo);
+  background-color: var(--cor-destaque);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: var(--cor-destaque);
+}
+
+/*Cardapio botões*/
+
+.buttonCart {
+  color: var(--cor-fundo);
+  background-color: var(--cor-auxiliar);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 15px;
+}
+
+.btn-cardapio:hover {
+  background-color: var(--cor-destaque);
+}
+
+
+
+.promoTag {
+  background-color: red;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+/*-----------cardapio-------------*/
+
+/*cardapio*/
+.cardapio {
+  align-items: center;
+}
+
+.cardapio-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.cardapio-texto img {
+  text-align: center;
+}
+
+.seeProductsButton {
+  margin: 20px;
+  text-align: center;
+}
+
+.cardapio-item {
+  display: flex;
+  gap: 30px;
+}
+
+.cardapio-cards {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-auxiliar);
+  max-width: 1440px;
+  flex-wrap: wrap;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.produto {
+  background-color: var(--cor-fundo);
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+
+}
+
+.produto img {
+  width: 100%;
+  height: 210px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.produto-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.product-buttons .btn {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/*-------------------botões flutuantes-------------*/
+
+.whatsappFloat {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--cor-destaque);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+.pageTopFloat {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: var(--cor-destaque);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+/*----------------inputs----------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+  border: 1px solid #922727;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #eee2e2;
+  margin: 5px;
+}
+
+input:focus {
+  border-color: #502c0e;
+  outline: none;
+  box-shadow: 0 0 5px #502c0e;
+  background-color: #eee;
+}
+
+input:hover {
+  border-color: #ff8c00;
+  outline: none;
+  background-color: #eee;
+}
+
+
+input[type="submit"] {
+  background-color: var(--);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  margin-left: auto;
+  display: block;
+
+}
+
+input[type="submit"]:hover {
+  background-color: var(--cor-auxiliar);
+}

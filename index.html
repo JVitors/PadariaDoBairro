@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Padatia do José - Pães frescos todos os dias">
-  <meta name="keywords" content="padaria, pães, doces. salgados, café da manhã, delivery">
+  <meta name="description" content="Padaria do José - Pães frescos todos os dias">
+  <meta name="keywords" content="padaria, pães, doces, salgados, café da manhã e delivery">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Padaria do José, Pães Pães frescos todos os dias">
-  <meta property="description"
-    content="Tudo a padaria Casa do Pão, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+  <meta property="og:title" content="Padaria do José - Pães frescos todos os dias">
+  <meta property="og:description" content="Tudo sobre a Padaria do José: cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+  
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
 
@@ -22,102 +22,96 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/newstyle.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
+  <link rel="icon" href="favicon.png" type="image/png">
   <title>Padaria do José</title>
 </head>
 
 <body>
-  <!--Cabeçalho-->
-  <header id="main-header">
-    <div class="container">
-      <div class="cabecalho-content">
-        <!--Logo-->
-        <a href="">
-          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-        </a>
 
-        <!--Navegação principal-->
-        <nav>
-          <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Depoimentos</a></li>
-            <li><a href="">Diferenciais</a></li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Onde Estamos</a></li>
-            <li><a href="">Sobre Nós</a></li>
-            <li><a href="">Contato</a></li>
-          </ul>
-        </nav>
-        <ul>
-          <li><a href="">Criar conta</a></li>
-          <li><a href="">Entrar</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <div class="main-grid">
 
-  <!--conteudo principal-->
-  <main id="conteudo-principal">
-    <!--Icones flutuantes-->
-    <div>
-      <!--up-arrow-->
-      <a href="#inicio" class="float">
-        <i class="fa fa-plus my-float"><i class="bi bi-whatsapp"></i></i>
-      </a>
-
-      <!--whatsapp-->
-      <a href="#" class="float2">
-        <i class="fa fa-plus my-float"><i class="bi bi-arrow-up"></i></i>
-      </a>
-    </div>
-
-    <!--Hero Section-->
-
-    <div id="hero">
+    <!--Cabeçalho-->
+    <header id="main-header">
       <div class="container">
-        <div class="hero-container">
-          <div class="hero-box">
-            <h1>Padaria do José</h1>
-            <h2>Sabor e tradição que você confia!</h2>
-            <p>
-              Pães artesanais, doces irresistíveis e salgados feitos com
-              paixão, fresquinhos para você a cada dia.
-            </p>
+        <div class="cabecalho-content">
+          <!--Logo-->
+          <a href="index.html">
+            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+          </a>
+          <!-- Barra de Navegação -->
+          <nav class="navbar-principal">
+            <ul class="nav-menu">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#testimony">Depoimentos</a></li>
+              <li><a href="#differential">Diferenciais</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#location">Onde Estamos</a></li>
+              <li><a href="#join-us">Sobre Nós</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
 
-            <div>
-              <a class="btn" href="#cardapio">Confira nosso cardapio</a>
+          <nav class="navbar-secundaria">
+            <ul class="nav-auth">
+              <li><a href="signup.html">Criar conta</a></li>
+              <li><a href="login.html">Entrar</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+    <!--conteudo principal-->
+    <main id="conteudo-principal">
+
+      <!--Hero Section-->
+
+      <div id="hero">
+        <div class="container">
+          <div class="hero-container">
+            <div class="hero-box">
+              <h1>Padaria do José</h1>
+              <h2>Sabor e tradição que você confia!</h2>
+              <p>
+                Pães artesanais, doces irresistíveis e salgados feitos com
+                paixão, fresquinhos para você a cada dia.
+              </p>
+
+              <div>
+                <a class="btn" href="#products">Confira nossos produtos</a>
+              </div>
+            </div>
+
+            <div class="hero-image">
+              <img src="./assets/img/hero-logo.jpg" alt="logo da padaria">
             </div>
           </div>
-
-          <div class="hero-image">
-            <img src="./assets/img/hero-logo.png" alt="">
-          </div>
         </div>
       </div>
-    </div>
 
-    <!-- cardapio -->
+      <!-- cardapio -->
 
-    <section id="products">
-      <div class="container">
-
-        <div class="cardapio-texto">
-          <img class="logo" src="./assets/img/logo.png" alt="Logo da Padaria do José">
-          <h2>Nossos produtos mais queridos</h2>
-          <p>Selecionados especialmente por nossos clientes</p>
-        </div>
+      <section id="products">
         <div class="container">
+
+          <div class="cardapio-texto">
+            <img class="logo" src="./assets/img/logo.jpg" alt="Logo da Padaria do José">
+            <h2>Nossos produtos mais queridos</h2>
+            <p>Selecionados especialmente por nossos clientes</p>
+          </div>
           <div class="cardapio">
             <div class="cardapio-cards">
 
               <!-- Produto 1 -->
               <div class="produto">
-                <img src="./assets/img/galeria/1.png" alt="">
-                <p class="red-button"><i class="bi bi-fire"></i> Promoção</p>
+                <img src="./assets/img/cardapio/paoFrances.jpg" alt="">
+                <p class="promoTag"><i class="bi bi-fire"></i> Promoção!</p>
 
                 <div class="produto-texto">
-                  <strong>Pão francês crocante</strong>
+                  <strong>Pão francês</strong>
                   <div class="estrelas-avaliacao">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -126,15 +120,18 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <p>R$ 0,80 por Kg</p>
-                  <a href="" class="btn-cardapio">Adicionar <i class="bi bi-cart-plus-fill"></i></a>
+                  <div class="product-buttons">
+                    <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
+                    <button class="btn">Ver Detalhes</button>
+                  </div>
                 </div>
               </div>
 
               <!-- Produto 2 -->
               <div class="produto">
-                <img src="./assets/img/galeria/2.png" alt="">
+                <img src="./assets/img/cardapio/boloFuba.jpg" alt="">
                 <div class="produto-texto">
-                  <strong>Pão francês crocante</strong>
+                  <strong>Bolo de Fubá</strong>
                   <div class="estrelas-avaliacao">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -142,20 +139,23 @@
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                   </div>
-                  <p>R$ 0,80 por Kg</p>
+                  <p>R$15,00 a unidade</p>
 
-                  <a href="" class=" btn-cardapio">Adicionar <i class="bi bi-cart-plus-fill"></i></a>
+                  <div class="product-buttons">
+                    <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
+                    <button class="btn">Ver Detalhes</button>
+                  </div>
                 </div>
               </div>
 
               <!-- Produto 3 -->
 
               <div class="produto">
-                <img src="./assets/img/galeria/6.png" alt="">
-                <p class="red-button"><i class="bi bi-fire"></i> Novo</p>
+                <img src="./assets/img/cardapio/coxinhaFrango.jpg" alt="">
+                <p class="promoTag"><i class="bi bi-fire"></i> Novo!</p>
 
                 <div class="produto-texto">
-                  <strong>Pão francês crocante</strong>
+                  <strong>Coxinha de Frango</strong>
                   <div class="estrelas-avaliacao">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -163,284 +163,303 @@
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                   </div>
-                  <p>R$ 0,80 por Kg</p>
+                  <p>R$ 1,00 a unidade</p>
 
-                  <a href="" class=" btn-cardapio">Adicionar <i class="bi bi-cart-plus-fill"></i></a>
+                  <div class="product-buttons">
+                    <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
+                    <button class="btn">Ver Detalhes</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="cardapio-footer">
-              <a class="btn" href="">Ver cardapio completo</a>
+            <div class="seeProductsButton">
+              <a class="btn" href="cardapio.html">Ver cardapio completo</a>
             </div>
           </div>
         </div>
 
-      </div>
-    </section>
 
+      </section>
 
-
-    <!--Depoimentos-->
-    <section id="testimony">
-      <div class="container">
-        <div class="depoimento-texto">
-          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-          <h2>O que nossos clientes dizem</h2>
-          <p>Cada sorriso é nossa maior receita</p>
-        </div>
-
-
-        <div>
-          <div class="depoimento-cards">
-
-            <!-- Depoimento 1 -->
-            <div class="depoimento-item">
-              <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <q>
-                A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
-                Tudo
-                é
-                fresquinho e o atendimento é sempre acolhedor.
-              </q>
-              <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
-              <img src="./assets/img/depoimento/maria.png" alt="">
-
-            </div>
-
-            <!-- Depoimento 2 -->
-            <div class="depoimento-item">
-              <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-              </div>
-              <q>
-                A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
-                Tudo
-                é
-                fresquinho e o atendimento é sempre acolhedor.
-              </q>
-              <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
-              <img src="./assets/img/depoimento/maria.png" alt="">
-
-            </div>
-            <!-- Depoimento 3 -->
-            <div class="depoimento-item">
-              <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-              </div>
-              <q>
-                A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
-                Tudo
-                é
-                fresquinho e o atendimento é sempre acolhedor.
-              </q>
-              <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
-              <img src="./assets/img/depoimento/maria.png" alt="">
-
-            </div>
-
-          </div>
-
+      <!--Depoimentos-->
+      <section id="testimony">
+        <div class="container">
           <div class="depoimento-texto">
-            <p>Quer deixar seu depoimento também?</p>
-            <a class="btn" href="">Deixar um depoimento</a>
+            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <h2>O que nossos clientes dizem</h2>
+            <p>Cada sorriso é nossa maior receita</p>
           </div>
 
 
-        </div>
-      </div>
-    </section>
-
-
-    <!--nosso diferencial-->
-
-    <section id="differential">
-      <div class="container">
-        <div class="differential">
-          <div class="title-logo">
-            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-            <h2>Nossos diferenciais</h2>
-          </div>
           <div>
+            <div class="depoimento-cards">
+
+              <!-- Depoimento 1 -->
+              <div class="depoimento-item">
+                <div>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <q>
+                  A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
+                  Tudo
+                  é
+                  fresquinho e o atendimento é sempre acolhedor.
+                </q>
+                <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
+                <img src="./assets/img/depoimento/maria.png" alt="">
+
+              </div>
+
+              <!-- Depoimento 2 -->
+              <div class="depoimento-item">
+                <div>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <q>
+                  A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
+                  Tudo
+                  é
+                  fresquinho e o atendimento é sempre acolhedor.
+                </q>
+                <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
+                <img src="./assets/img/depoimento/maria.png" alt="">
+
+              </div>
+              <!-- Depoimento 3 -->
+              <div class="depoimento-item">
+                <div>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <q>
+                  A Casa do Pão virou parte da minha rotina. O cheiro do pão saindo do forno logo cedo é irresistível!
+                  Tudo
+                  é
+                  fresquinho e o atendimento é sempre acolhedor.
+                </q>
+                <p><time datetime="2025-07-15">15 de julho, 2025</time></p>
+                <img src="./assets/img/depoimento/maria.png" alt="">
+
+              </div>
+
+            </div>
+
+            <div class="depoimento-texto">
+              <p>Quer deixar seu depoimento também?</p>
+              <a class="btn" href="">Deixar um depoimento</a>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+      <!--nosso diferencial-->
+
+      <section id="differential">
+        <div class="container">
+          <div class="differential">
+            <div class="title-logo">
+              <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+              <h2>Nossos diferenciais</h2>
+            </div>
+            <div>
+              <ul>
+                <li>Pães sempre quentinhos e frescos para você</li>
+                <li>Apenas os melhores ingredientes em nossos produtos</li>
+                <li>Receitas de família passadas por gerações</li>
+                <li>Entregamos em até 30 minutos na sua casa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--Junte se a padaria-->
+
+      <section id="join-us">
+        <div class="container">
+          <div class="title-logo">
+            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <h2>Junte-se à nossa padaria!</h2>
+          </div>
+          <div class="join-us-flex">
+            <video class="video-padaria" src="./assets/vid/padaria.mp4" autoplay loop></video>
+            <div class="join-us-text">
+              <p>
+                Cadastre-se para fazer pedidos online, receber promoções exclusivas e ficar por dentro das novidades.
+              </p>
+              <a class="btn" href="signup.html">Criar minha conta</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Galeria-->
+      <section id="gallery">
+        <div class="container">
+          <div class="title-logo">
+            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <h2>Galeria</h2>
+          </div>
+          <div class="gallery-grid">
+            <img src="./assets/img/galeria/1.png" alt="Galeria 1">
+            <img src="./assets/img/galeria/2.png" alt="Galeria 2">
+            <img src="./assets/img/galeria/4.png" alt="Galeria 3">
+            <img src="./assets/img/galeria/5.png" alt="Galeria 4">
+            <img src="./assets/img/galeria/6.png" alt="Galeria 1">
+            <img src="./assets/img/galeria/8.png" alt="Galeria 2">
+            <img src="./assets/img/galeria/9.png" alt="Galeria 3">
+            <img src="./assets/img/galeria/10.png" alt="Galeria 4">
+          </div>
+        </div>
+      </section>
+
+      <!--Onde estamos-->
+      <section id="location">
+        <div class="container">
+          <div class="title-logo">
+            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <h2>Venha nos visitar</h2>
+          </div>
+          <div class="location-content">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3256575852643!2d-46.66145928813674!3d-23.556744678714562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5832d34d2d31%3A0x95900c1b6b536403!2sR.%20Augusta%2C%201508%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001304-001!5e0!3m2!1spt-BR!2sbr!4v1754536070095!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-details">
+                <h3>Localização</h3>
+                <address>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</address>
+              </div>
+
+              <div class="contact-details">
+                <h3>Horário de funcionamento</h3>
+                <p>Segunda a Sexta: 6h às 19h</p>
+                <p>Sábado: 6h às 18h</p>
+                <p>Domingo: 7h às 13h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--sobre nós-->
+      <section id="about-us">
+        <div class="container">
+          <div class="title-logo">
+            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <h2>Sobre Nós</h2>
+          </div>
+          <div class="side">
+            <div class="about-us-text">
+              <p>Há mais de 35 anos, a Padaria do Pão tem sido o coração da nossa comunidade, oferecendo pães frescos e
+                produtos de qualidade todos os dias. Nossa história começou em 1985 com o sonho de uma família de trazer
+                o
+                melhor da panificação tradicional para nossa cidade.</p>
+              <p>Cada produto é feito com amor, usando receitas tradicionais e ingredientes cuidadosamente selecionados.
+                Nossa
+                equipe trabalha desde as primeiras horas da manhã para garantir que você sempre encontre pães quentinhos
+                e
+                deliciosos.</p>
+            </div>
+
+            <img src="./assets/img/about-us.jpg" alt="Sobre Nós">
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!--Rodapé-->
+    <footer id="footer">
+      <div class="container">
+        <div class="rodape">
+          <div class="footer-list">
+            <h4>Informações</h4>
             <ul>
-              <li>Pães sempre quentinhos e frescos para você</li>
-              <li>Apenas os melhores ingredientes em nossos produtos</li>
-              <li>Receitas de família passadas por gerações</li>
-              <li>Entregamos em até 30 minutos na sua casa</li>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Termos de Uso</a></li>
+              <li><a href="#">Política de Cookies</a></li>
+              <li><a href="#">Perguntas Frequentes</a></li>
+              <li><a href="#">Trabalhe Conosco</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
 
+          <div class="footer-list">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="contato.html">Fale conosco</a></li>
+              <li><a href="#">Trabalhe conosco</a></li>
+              <li><a href="feedback.html">Deixe seu feedback</a></li>
+              <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+              <li><a href="mailto:contato@casadopao.com.br">contato@casadopao.com.br</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <h4>Certificações</h4>
+            <ul>
+              <li>ISO 9001</li>
+              <li>ANVISA</li>
+              <li>Orgânico Certificado</li>
+            </ul>
+          </div>
 
+          <div class="footer-list">
+            <h4>Redes Sociais</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Whatsapp</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <p>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</p>
 
-    <!--Junte se a padaria-->
+          <div class="line"></div>
 
-    <section id="join-us">
-      <div class="container">
-        <div class="title-logo">
-          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-          <h2>Junte-se à nossa padaria!</h2>
-        </div>
-        <div class="join-us-flex">
-          <video class="video-padaria" src="./assets/vid/padaria.mp4" autoplay loop></video>
-          <div class="join-us-text">
-            <p>
-              Cadastre-se para fazer pedidos online, receber promoções exclusivas e ficar por dentro das novidades.
-            </p>
-            <a class="btn" href="">Criar minha conta</a>
+          <div class="rights">
+            <p>© 2024 Padaria do José. Todos os direitos reservados.</p>
+            <p>CNPJ: 12.345.678/0001-90 | Desenvolvido com base no template de site feito por <a
+                href="https://www.figma.com/design/UWdlfVgFpDQRMivJULwyWW/Casa-do-P%C3%A3o?node-id=0-1&p=f&t=8YAhDTIQ8X8f0C0Y-0"
+                target="_blank" rel="noopener noreferrer"> Cauany Rodrigues</a>.</p>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
+  </div>
+    <!--Icones flutuantes-->
+    <div>
+      <!--whatsapp-->
+      <a href="https://web.whatsapp.com" class="whatsappFloat">
+        <i class="bi bi-whatsapp"></i>
+      </a>
 
+      <!--topPage-->
+      <a href="#hero" class="pageTopFloat">
+        <i class="bi bi-arrow-up"></i>
+      </a>
 
-    <!--Galeria-->
-    <section id="gallery">
-      <div class="container">
-        <div class="title-logo">
-          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-          <h2>Galeria</h2>
-        </div>
-        <div class="gallery-grid">
-          <img src="./assets/img/galeria/1.png" alt="Galeria 1">
-          <img src="./assets/img/galeria/2.png" alt="Galeria 2">
-          <img src="./assets/img/galeria/4.png" alt="Galeria 3">
-          <img src="./assets/img/galeria/5.png" alt="Galeria 4">
-          <img src="./assets/img/galeria/6.png" alt="Galeria 1">
-          <img src="./assets/img/galeria/8.png" alt="Galeria 2">
-          <img src="./assets/img/galeria/9.png" alt="Galeria 3">
-          <img src="./assets/img/galeria/10.png" alt="Galeria 4">
-        </div>
-      </div>
-    </section>
-
-    <!--Onde estamos-->
-    <section id="location">
-      <div class="container">
-        <div class="title-logo">
-          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-          <h2>Venha nos visitar</h2>
-        </div>
-        <div class="location-content">
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3256575852643!2d-46.66145928813674!3d-23.556744678714562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5832d34d2d31%3A0x95900c1b6b536403!2sR.%20Augusta%2C%201508%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001304-001!5e0!3m2!1spt-BR!2sbr!4v1754536070095!5m2!1spt-BR!2sbr"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-          <div class="contact-info">
-            <div class="contact-details">
-              <h3>Localização</h3>
-              <address>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</address>
-            </div>
-
-            <div class="contact-details">
-              <h3>Horário de funcionamento</h3>
-              <p>Segunda a Sexta: 6h às 19h</p>
-              <p>Sábado: 6h às 18h</p>
-              <p>Domingo: 7h às 13h</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!--sobre nós-->
-    <section id="about-us">
-      <div class="container">
-        <div class="title-logo">
-          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
-          <h2>Sobre Nós</h2>
-        </div>
-        <div class="side">
-          <div class="about-us-text">
-            <p>Há mais de 35 anos, a Padaria do Pão tem sido o coração da nossa comunidade, oferecendo pães frescos e
-              produtos de qualidade todos os dias. Nossa história começou em 1985 com o sonho de uma família de trazer o
-              melhor da panificação tradicional para nossa cidade.</p>
-            <p>Cada produto é feito com amor, usando receitas tradicionais e ingredientes cuidadosamente selecionados.
-              Nossa
-              equipe trabalha desde as primeiras horas da manhã para garantir que você sempre encontre pães quentinhos e
-              deliciosos.</p>
-          </div>
-
-          <img src="./assets/img/about-us.jpg" alt="Sobre Nós">
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <!--Rodapé-->
-  <footer id="footer">
-    <div class="container">
-      <div class="rodape">
-        <div class="footer-list">
-          <h4>Informações</h4>
-          <ul>
-            <li>Política de Privacidade</li>
-            <li>Termos de Uso</li>
-            <li>Política de Cookies</li>
-            <li>Perguntas Frequentes</li>
-            <li>Trabalhe Conosco</li>
-          </ul>
-        </div>
-
-        <div class="footer-list">
-          <h4>Contato</h4>
-          <ul>
-            <li>Fale conosco</li>
-            <li>Trabalhe conosco</li>
-            <li>Deixe seu feedback</li>
-            <li>(11) 99999-9999</li>
-            <li>contato@casadopao.com.br</li>
-          </ul>
-        </div>
-        <div class="footer-list">
-          <h4>Certificações</h4>
-          <ul>
-            <li>ISO 9001</li>
-            <li>ANVISA</li>
-            <li>Orgânico Certificado</li>
-          </ul>
-        </div>
-
-        <div class="footer-list">
-          <h4>Redes Sociais</h4>
-          <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Whatsapp</li>
-            <li>Youtube</li>
-          </ul>
-        </div>
-        <p>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</p>
-
-        <div class="line"></div>
-
-        <div class="rights">
-          <p>© 2024 Padaria do José. Todos os direitos reservados.</p>
-          <p>CNPJ: 12.345.678/0001-90 | Desenvolvido com ❤️ por Cauany Rodrigues</p>
-        </div>
-      </div>
     </div>
-  </footer>
 
 </body>
 

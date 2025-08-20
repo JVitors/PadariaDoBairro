@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Padatia do José - Pães frescos todos os dias">
+  <meta name="keywords" content="padaria, pães, doces. salgados, café da manhã, delivery">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Padaria do José, Pães Pães frescos todos os dias">
+  <meta property="description"
+    content="Tudo a padaria Casa do Pão, cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header id="main-header">
+    <div class="container">
+      <div class="cabecalho-content">
+        <!--Logo-->
+        <a href="">
+          <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
+        </a>
+
+        <!--Navegação principal-->
+        <nav>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="#testimony">Depoimentos</a></li>
+            <li><a href="#differential">Diferenciais</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#location">Onde Estamos</a></li>
+            <li><a href="#join-us">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <ul>
+          <li><a href="signup.html">Criar conta</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <!--formulario-->
+      <div class="formTitle">
+        <h1>Se cadastre para fazer novos pedidos e receber novidades</h1>
+      </div>
+
+      <!--informação de contato-->
+      <form action="/signupForm">
+        <div class="formulario-lado">
+          <fieldset class="teste">
+            <legend>Dados básicos</legend>
+            <label for="nomeCompleto">Nome Completo:*</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
+
+            <label for="dataNascimento">Data de Nascimento:*</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+          </fieldset>
+
+          <fieldset class="teste">
+            <legend>Contato</legend>
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+            <label for="telefone">Telefone:*</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(0xx)xxxx-xxxx" required>
+          </fieldset>
+        </div>
+
+        <!--Endereço-->
+        <fieldset>
+          <legend>Endereço</legend>
+          <div class="formulario-lado">
+            <div>
+              <label for="rua">Rua:*</label>
+              <input type="text" id="rua" name="rua" placeholder="Nome da rua" required>
+
+              <label for="numero">Nº:*</label>
+              <input type="text" id="numero" name="numero" placeholder="Numero" required>
+
+              <label for="complemento">Complemento</label>
+              <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+            </div>
+
+            <div>
+              <label for="cep">CEP:*</label>
+              <input type="text" id="cep" name="cep" placeholder="09784-275" maxlength="8" pattern="\d{5}-?\d{3}"
+                required>
+
+              <label for="bairro">Bairro:*</label>
+              <input type="text" id="bairro" name="bairro" placeholder="Nome do Bairro" required>
+
+              <label for="cidade">Cidade:*</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="formulario-lado">
+          <fieldset class="teste terms">
+            <legend>Preferencias</legend>
+
+            <!--colocar label e checkbox dentro de um div fazem eles aparecerem da forma correta-->
+            <div>
+              <input type="checkbox" id="paesArtesanais" name="produtos" value="paesArtesanais">
+              <label for="paesArtesanais">Pães artesanais</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="docesBolos" name="produtos" value="docesBolos">
+              <label for="docesBolos">Doces e bolos</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="salgados" name="produtos" value="salgados">
+              <label for="salgados">Salgados</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="dietLight" name="produtos" value="dietLight">
+              <label for="dietLight">Produtos diet/light</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="produtosIntegrais" name="produtos" value="produtosIntegrais">
+              <label for="produtosIntegrais">Produtos integrais</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="teste">
+            <legend>Login</legend>
+
+            <label for="login">Login*</label>
+            <input type="password" name="login" id="login" placeholder="Digite sua senha" required>
+
+            <div class="terms">
+              <ul>
+                <li>* Mínimo de 8 caracteres</li>
+                <li>* Pelo menos uma letra</li>
+                <li>* Pelo menos um número</li>
+                <li>* Pelo menos um caractere especial</li>
+              </ul>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <fieldset>
+          <legend>Termos</legend>
+          <div class="terms">
+            <div>
+              <input type="checkbox" name="promocheck" id="promocheck" required>
+              <label for="promocheck">Aceito receber promoções por email</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="termos" id="termos" required>
+              <label for="termos">Aceito os <a href="" target="_blank" rel="noopener noreferrer">termos de
+                  uso</a>*</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!--Aceitar cadastro /// Limpar formulario-->
+        <div class="signupButtonsPos">
+          <button type="submit" class="btn">Cadastrar</button>
+          <button type="reset" class="btn">Limpar</button>
+        </div>
+      </form>
+    </div>
+
+
+
+  </main>
+
+  <!--Rodapé-->
+  <footer id="footer">
+    <div class="container">
+      <div class="rodape">
+        <div class="footer-list">
+          <h4>Informações</h4>
+          <ul>
+            <li>Política de Privacidade</li>
+            <li>Termos de Uso</li>
+            <li>Política de Cookies</li>
+            <li>Perguntas Frequentes</li>
+            <li>Trabalhe Conosco</li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h4>Contato</h4>
+          <ul>
+            <li>Fale conosco</li>
+            <li>Trabalhe conosco</li>
+            <li>Deixe seu feedback</li>
+            <li>(11) 99999-9999</li>
+            <li>contato@casadopao.com.br</li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <h4>Certificações</h4>
+          <ul>
+            <li>ISO 9001</li>
+            <li>ANVISA</li>
+            <li>Orgânico Certificado</li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+        <p>Rua Augusta, 1508 – Consolação, São Paulo – SP, 01304-001</p>
+
+        <div class="line"></div>
+
+        <div class="rights">
+          <p>© 2024 Padaria do José. Todos os direitos reservados.</p>
+          <p>CNPJ: 12.345.678/0001-90 | Desenvolvido com ❤️ por Cauany Rodrigues</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Icones flutuantes-->
+  <div>
+    <!--up-arrow-->
+    <a href="https://web.whatsapp.com" class="whatsappFloat">
+      <i class="fa fa-plus my-float"><i class="bi bi-whatsapp"></i></i>
+    </a>
+
+    <!--whatsapp-->
+    <a href="#inicio" class="pageTopFloat">
+      <i class="fa fa-plus my-float"><i class="bi bi-arrow-up"></i></i>
+    </a>
+  </div>
+</body>
