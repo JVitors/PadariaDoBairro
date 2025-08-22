@@ -9,8 +9,9 @@
   <meta name="robots" content="index, follow">
 
   <meta property="og:title" content="Padaria do José - Pães frescos todos os dias">
-  <meta property="og:description" content="Tudo sobre a Padaria do José: cardápio, pedidos, história, galeria, depoimentos e muito mais!">
-  
+  <meta property="og:description"
+    content="Tudo sobre a Padaria do José: cardápio, pedidos, história, galeria, depoimentos e muito mais!">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
 
@@ -36,10 +37,17 @@
     <header id="main-header">
       <div class="container">
         <div class="cabecalho-content">
-          <!--Logo-->
+          <!-- Logo -->
           <a href="index.html">
-            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
           </a>
+
+          <button class="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+
           <!-- Barra de Navegação -->
           <nav class="navbar-principal">
             <ul class="nav-menu">
@@ -50,11 +58,7 @@
               <li><a href="#location">Onde Estamos</a></li>
               <li><a href="#join-us">Sobre Nós</a></li>
               <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
-
-          <nav class="navbar-secundaria">
-            <ul class="nav-auth">
+              <li><a href=""><i class="bi bi-cart"></i></a></li>
               <li><a href="signup.html">Criar conta</a></li>
               <li><a href="login.html">Entrar</a></li>
             </ul>
@@ -86,7 +90,7 @@
             </div>
 
             <div class="hero-image">
-              <img src="./assets/img/hero-logo.jpg" alt="logo da padaria">
+              <img src="./assets/img/hero-logo.png" alt="logo da padaria">
             </div>
           </div>
         </div>
@@ -98,7 +102,7 @@
         <div class="container">
 
           <div class="cardapio-texto">
-            <img class="logo" src="./assets/img/logo.jpg" alt="Logo da Padaria do José">
+            <img class="logo" src="./assets/img/logo.png" alt="Logo da Padaria do José">
             <h2>Nossos produtos mais queridos</h2>
             <p>Selecionados especialmente por nossos clientes</p>
           </div>
@@ -108,7 +112,7 @@
               <!-- Produto 1 -->
               <div class="produto">
                 <img src="./assets/img/cardapio/paoFrances.jpg" alt="">
-                <p class="promoTag"><i class="bi bi-fire"></i> Promoção!</p>
+                <p class="badge"><i class="bi bi-fire"></i> Promoção!</p>
 
                 <div class="produto-texto">
                   <strong>Pão francês</strong>
@@ -122,10 +126,29 @@
                   <p>R$ 0,80 por Kg</p>
                   <div class="product-buttons">
                     <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
-                    <button class="btn">Ver Detalhes</button>
+                    <button class="btn" onclick="openModal('modal-pao-frances')">Ver Detalhes</button>
                   </div>
                 </div>
               </div>
+
+              <!-- Modal para Pão Francês -->
+              <dialog id="modal-pao-frances" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-pao-frances')">&times;</span>
+                  <img src="./assets/img/cardapio/paoFrances.jpg" alt="Pão Francês">
+                  <h3>Pão Francês</h3>
+                  <p>Nosso clássico pão francês, com casca crocante e miolo macio.</p>
+                  <p><strong>Preço:</strong> R$ 0,80 por Kg</p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>Farinha de trigo</li>
+                    <li>Água</li>
+                    <li>Fermento biológico</li>
+                    <li>Sal</li>
+                    <li>Açúcar</li>
+                  </ul>
+                </div>
+              </dialog>
 
               <!-- Produto 2 -->
               <div class="produto">
@@ -143,16 +166,34 @@
 
                   <div class="product-buttons">
                     <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
-                    <button class="btn">Ver Detalhes</button>
+                    <button class="btn" onclick="openModal('modal-bolo-fuba')">Ver Detalhes</button>
                   </div>
                 </div>
               </div>
+
+
+              <!-- Modal para Bolo de Fubá -->
+              <dialog id="modal-bolo-fuba" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-bolo-fuba')">&times;</span>
+                  <img src="./assets/img/cardapio/boloFuba.jpg" alt="Bolo de Fubá">
+                  <h3>Bolo de Fubá</h3>
+                  <p>Nosso delicioso bolo de fubá, fofinho e perfeito para acompanhar um café.</p>
+                  <p><strong>Preço:</strong> R$15,00 a unidade</p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>Fubá</li>
+                    <li>Farinha de trigo</li>
+                    <li>Açúcar, Ovos, Leite, Óleo, Fermento em pó</li>
+                  </ul>
+                </div>
+              </dialog>
 
               <!-- Produto 3 -->
 
               <div class="produto">
                 <img src="./assets/img/cardapio/coxinhaFrango.jpg" alt="">
-                <p class="promoTag"><i class="bi bi-fire"></i> Novo!</p>
+                <p class="badge"><i class="bi bi-fire"></i> Novo!</p>
 
                 <div class="produto-texto">
                   <strong>Coxinha de Frango</strong>
@@ -167,10 +208,159 @@
 
                   <div class="product-buttons">
                     <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
-                    <button class="btn">Ver Detalhes</button>
+                    <button class="btn" onclick="openModal('modal-coxinha-frango')">Ver Detalhes</button>
                   </div>
                 </div>
               </div>
+
+              <!-- Modal para Coxinha de Frango -->
+              <dialog id="modal-coxinha-frango" class="modal">
+                <div class="modal-content">
+
+                  <span class="close" onclick="closeModal('modal-coxinha-frango')">&times;</span>
+                  <img src="./assets/img/cardapio/coxinhaFrango.jpg" alt="Coxinha de Frango">
+                  <h3>Coxinha de Frango</h3>
+                  <p>Uma deliciosa coxinha de frango, com massa crocante e recheio suculento.</p>
+                  <p><strong>Preço:</strong> R$ 1,00 a unidade</p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>Frango desfiado</li>
+                    <li>Massa de trigo</li>
+                    <li>Temperos</li>
+                    <li>Óleo para fritar</li>
+                  </ul>
+                </div>
+              </dialog>
+
+              <!--Produto 4-->
+
+              <div class="produto">
+                <img src="./assets/img/cardapio/broaMilho.jpg" alt="Broa de Milho">
+                <div class="produto-texto">
+                  <strong>Broa de Milho</strong>
+                  <div class="estrelas-avaliacao">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p>R$ 3,50 a unidade</p>
+                  <div class="product-buttons">
+                    <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
+                    <button class="btn" onclick="openModal('modal-broa-milho')">Ver Detalhes</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Modal para Broa de Milho -->
+
+              <dialog id="modal-broa-milho" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-broa-milho')">&times;</span>
+                  <img src="./assets/img/cardapio/broaMilho.jpg" alt="Broa de Milho">
+                  <h3>Broa de Milho</h3>
+                  <p>Broa artesanal com sabor caseiro, perfeita para o café da tarde.</p>
+                  <p><strong>Preço:</strong> R$ 3,50 a unidade</p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>Fubá de milho</li>
+                    <li>Farinha de trigo</li>
+                    <li>Açúcar</li>
+                    <li>Ovos</li>
+                    <li>Erva-doce</li>
+                  </ul>
+                </div>
+              </dialog>
+
+              <!--Produto 6-->
+
+              <div class="produto">
+                <img src="./assets/img/cardapio/croissantChocolate.jpg" alt="Croissant de Chocolate">
+                <div class="produto-texto">
+                  <strong>Croissant de Chocolate</strong>
+                  <div class="estrelas-avaliacao">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p>R$ 6,00 a unidade</p>
+                  <div class="product-buttons">
+                    <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
+                    <button class="btn" onclick="openModal('modal-croissant-chocolate')">Ver Detalhes</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- Modal para Croissant de Chocolate-->
+
+
+              <dialog id="modal-croissant-chocolate" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-croissant-chocolate')">&times;</span>
+                  <img src="./assets/img/cardapio/croissantChocolate.jpg" alt="Croissant de Chocolate">
+                  <h3>Croissant de Chocolate</h3>
+                  <p>Massa folhada leve com recheio cremoso de chocolate meio amargo.</p>
+                  <p><strong>Preço:</strong> R$ 6,00 a unidade</p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>Farinha de trigo</li>
+                    <li>Manteiga</li>
+                    <li>Chocolate meio amargo</li>
+                    <li>Ovos</li>
+                    <li>Açúcar</li>
+                  </ul>
+                </div>
+              </dialog>
+
+
+              <!--Produto 6-->
+
+              <div class="produto">
+                <img src="./assets/img/cardapio/bagueteIntegral.jpg" alt="Baguete Integral">
+                <div class="produto-texto">
+                  <strong>Baguete Integral</strong>
+                  <div class="estrelas-avaliacao">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p>R$ 5,00 a unidade</p>
+                  <div class="product-buttons">
+                    <button class="btn">Adicionar <i class="bi bi-cart-plus-fill"></i></button>
+                    <button class="btn" onclick="openModal('modal-baguete-integral')">Ver Detalhes</button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Modal para Baguete Integral-->
+              <dialog id="modal-baguete-integral" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-baguete-integral')">&times;</span>
+                  <img src="./assets/img/cardapio/bagueteIntegral.jpg" alt="Baguete Integral">
+                  <h3>Baguete Integral</h3>
+                  <p>Uma opção saudável, feita com farinha 100% integral e sementes selecionadas.</p>
+                  <p><strong>Preço:</strong> R$ 5,00 a unidade</p>
+                  <h4>Ingredientes:</h4>
+                  <ul>
+                    <li>Farinha integral</li>
+                    <li>Fermento biológico</li>
+                    <li>Água</li>
+                    <li>Sal</li>
+                    <li>Sementes (linhaça, chia, girassol)</li>
+                  </ul>
+                </div>
+              </dialog>
+
+
+
             </div>
             <div class="seeProductsButton">
               <a class="btn" href="cardapio.html">Ver cardapio completo</a>
@@ -185,7 +375,7 @@
       <section id="testimony">
         <div class="container">
           <div class="depoimento-texto">
-            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
             <h2>O que nossos clientes dizem</h2>
             <p>Cada sorriso é nossa maior receita</p>
           </div>
@@ -272,7 +462,7 @@
         <div class="container">
           <div class="differential">
             <div class="title-logo">
-              <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+              <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
               <h2>Nossos diferenciais</h2>
             </div>
             <div>
@@ -294,7 +484,7 @@
       <section id="join-us">
         <div class="container">
           <div class="title-logo">
-            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
             <h2>Junte-se à nossa padaria!</h2>
           </div>
           <div class="join-us-flex">
@@ -314,7 +504,7 @@
       <section id="gallery">
         <div class="container">
           <div class="title-logo">
-            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
             <h2>Galeria</h2>
           </div>
           <div class="gallery-grid">
@@ -334,7 +524,7 @@
       <section id="location">
         <div class="container">
           <div class="title-logo">
-            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
             <h2>Venha nos visitar</h2>
           </div>
           <div class="location-content">
@@ -367,11 +557,11 @@
       <section id="about-us">
         <div class="container">
           <div class="title-logo">
-            <img src="./assets/img/logo.jpg" class="logo" alt="Logo da Padaria do José">
+            <img src="./assets/img/logo.png" class="logo" alt="Logo da Padaria do José">
             <h2>Sobre Nós</h2>
           </div>
-          <div class="side">
-            <div class="about-us-text">
+          <div class="aboutUs">
+            <div class="aboutUsText">
               <p>Há mais de 35 anos, a Padaria do Pão tem sido o coração da nossa comunidade, oferecendo pães frescos e
                 produtos de qualidade todos os dias. Nossa história começou em 1985 com o sonho de uma família de trazer
                 o
@@ -382,9 +572,9 @@
                 e
                 deliciosos.</p>
             </div>
-
-            <img src="./assets/img/about-us.jpg" alt="Sobre Nós">
-
+            <div>
+              <img src="./assets/img/about-us.jpg" alt="Sobre Nós">
+            </div>
           </div>
         </div>
       </section>
@@ -447,19 +637,22 @@
       </div>
     </footer>
   </div>
-    <!--Icones flutuantes-->
-    <div>
-      <!--whatsapp-->
-      <a href="https://web.whatsapp.com" class="whatsappFloat">
-        <i class="bi bi-whatsapp"></i>
-      </a>
+  <!--Icones flutuantes-->
+  <div>
+    <!--whatsapp-->
+    <a href="https://web.whatsapp.com" class="whatsappFloat">
+      <i class="bi bi-whatsapp"></i>
+    </a>
 
-      <!--topPage-->
-      <a href="#hero" class="pageTopFloat">
-        <i class="bi bi-arrow-up"></i>
-      </a>
+    <!--topPage-->
+    <a href="#hero" class="pageTopFloat">
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
-    </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/menu.js"></script>
 
 </body>
 
