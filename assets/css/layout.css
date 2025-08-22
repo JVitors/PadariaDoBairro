@@ -222,6 +222,11 @@ main-grid {
         display: none;
     }
 
+    .hero-image {
+        display: none;
+    }
+
+
     .differential ul {
         flex-direction: column;
         gap: 10px;
@@ -255,7 +260,6 @@ main-grid {
         position: absolute;
         left: 0;
         top: 70px;
-        /* This should be the height of your header */
         width: 100%;
         background-color: var(--cor-destaque);
         flex-direction: column;
@@ -279,6 +283,13 @@ main-grid {
         width: 100%;
         display: block;
     }
+
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 
@@ -288,9 +299,6 @@ main-grid {
         min-height: 50vh;
     }
 
-    .hero-image {
-        display: none;
-    }
 
     .product-cards {
         min-width: 220px;
@@ -306,7 +314,5 @@ main-grid {
         width: 100%;
     }
 
-    .aboutUs {
-        display: none;
-    }
+
 }
